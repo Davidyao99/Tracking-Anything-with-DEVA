@@ -12,11 +12,16 @@ class ObjectInfo:
                  id: int,
                  category_id: Optional[int] = None,
                  isthing: Optional[bool] = None,
-                 score: Optional[float] = None):
+                 score: Optional[float] = None,
+                 hidden_state_seg: Optional[np.ndarray] = None,
+                 hidden_state_clip: Optional[np.ndarray] = None):
+                
         self.id = id
         self.category_ids = [category_id]
         self.scores = [score]
         self.isthing = isthing
+        self.hidden_states_seg = [hidden_state_seg]
+        self.hidden_states_clip = [hidden_state_clip]
         self.poke_count = 0  # number of detections since last this object was last seen
 
     def poke(self) -> None:
@@ -28,6 +33,8 @@ class ObjectInfo:
     def merge(self, other) -> None:
         self.category_ids.extend(other.category_ids)
         self.scores.extend(other.scores)
+        self.hidden_states_seg.extend(other.hidden_states_seg)
+        self.hidden_states_clip.extend(other.hidden_states_clip)
 
     def vote_category_id(self) -> Optional[int]:
         category_ids = [c for c in self.category_ids if c is not None]
@@ -43,6 +50,20 @@ class ObjectInfo:
         else:
             return float(np.mean(scores))
 
+    def vote_hidden_states_seg(self) -> Optional[np.ndarray]:
+        hidden_states_seg = [c for c in self.hidden_states_seg if c is not None]
+        if len(hidden_states_seg) == 0:
+            return None
+        else:
+            return np.mean(np.array(hidden_states_seg), axis=0).tolist()
+
+    def vote_hidden_states_clip(self) -> Optional[np.ndarray]:
+        hidden_states_clip = [c for c in self.hidden_states_clip if c is not None]
+        if len(hidden_states_clip) == 0:
+            return None
+        else:
+            return np.mean(np.array(hidden_states_clip), axis=0).tolist()
+
     def get_rgb(self) -> np.ndarray:
         # this is valid for panoptic segmentation-style id only (0~255**3)
         return id_to_rgb(self.id)
@@ -51,6 +72,8 @@ class ObjectInfo:
         self.category_ids = other.category_ids
         self.scores = other.scores
         self.isthing = other.isthing
+        self.hidden_states_seg = other.hidden_states_seg
+        self.hidden_states_clip = other.hidden_states_clip
 
     def __hash__(self):
         return hash(self.id)
@@ -59,4 +82,4 @@ class ObjectInfo:
         return self.id == other.id
 
     def __repr__(self):
-        return f'(ID: {self.id}, cat: {self.category_ids}, isthing: {self.isthing}, score: {self.scores})'
+        return f'(ID: {self.id}, cat: {self.category_ids}, isthing: {self.isthing}, score: {self.scores}, hidden_states_seg: {self.hidden_states_seg}, hidden_states_clip: {self.hidden_states_clip})'

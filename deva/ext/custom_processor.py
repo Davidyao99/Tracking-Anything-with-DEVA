@@ -10,41 +10,15 @@ from deva.inference.inference_core import DEVAInferenceCore
 from deva.inference.frame_utils import FrameInfo
 from deva.inference.result_utils import ResultSaver
 from deva.inference.demo_utils import get_input_frame_for_deva
-from deva.ext.grounding_dino import segment_with_text
-try:
-    from groundingdino.util.inference import Model as GroundingDINOModel
-except ImportError:
-    # not sure why this happens sometimes
-    from GroundingDINO.groundingdino.util.inference import Model as GroundingDINOModel
-from segment_anything import SamPredictor
-
-
-def make_segmentation_with_text(cfg: Dict, image_np: np.ndarray, gd_model: GroundingDINOModel,
-                                sam_model: SamPredictor,clip_model, 
-                                clip_preprocess, prompts: List[str],
-                                min_side: int) -> (torch.Tensor, List[ObjectInfo]):
-    mask, segments_info = segment_with_text(cfg, gd_model, sam_model,clip_model, 
-                            clip_preprocess, image_np, prompts, min_side)
-    return mask, segments_info
-
+from deva.ext.custom_seg import make_segmentation_with_custom
 
 @torch.inference_mode()
-def process_frame_with_text(deva: DEVAInferenceCore,
-                            gd_model: GroundingDINOModel,
-                            sam_model: SamPredictor,
-                            clip_model, 
-                            clip_preprocess,
-                            frame_path: str,
-                            result_saver: ResultSaver,
-                            ti: int,
-                            image_np: np.ndarray = None) -> None:
-    # image_np, if given, should be in RGB
+def process_frame_custom(deva, seg_model, clip_model, clip_preprocess, frame_path, result_saver, ti, image_np):
+
     if image_np is None:
         image_np = cv2.imread(frame_path)
         image_np = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
     cfg = deva.config
-    raw_prompt = cfg['prompt']
-    prompts = raw_prompt.split('.')
 
     h, w = image_np.shape[:2]
     new_min_side = cfg['size']
@@ -59,8 +33,8 @@ def process_frame_with_text(deva: DEVAInferenceCore,
 
     if cfg['temporal_setting'] == 'semionline':
         if ti + cfg['num_voting_frames'] > deva.next_voting_frame:
-            mask, segments_info = make_segmentation_with_text(cfg, image_np, gd_model, sam_model, clip_model, 
-                                                            clip_preprocess, prompts, new_min_side)
+            mask, segments_info = make_segmentation_with_custom(cfg, image_np, seg_model, clip_model, 
+                                                            clip_preprocess)
             frame_info.mask = mask
             frame_info.segments_info = segments_info
             frame_info.image_np = image_np  # for visualization only
@@ -83,7 +57,7 @@ def process_frame_with_text(deva: DEVAInferenceCore,
                                        need_resize=need_resize,
                                        shape=(h, w),
                                        image_np=this_image_np,
-                                       prompts=prompts)
+                                       prompts=["nothing"])
 
                 for frame_info in deva.frame_buffer[1:]:
                     this_image = frame_info.image
@@ -95,7 +69,7 @@ def process_frame_with_text(deva: DEVAInferenceCore,
                                            need_resize,
                                            shape=(h, w),
                                            image_np=this_image_np,
-                                           prompts=prompts)
+                                           prompts=["nothing"])
 
                 deva.clear_buffer()
         else:
@@ -106,13 +80,13 @@ def process_frame_with_text(deva: DEVAInferenceCore,
                                    need_resize=need_resize,
                                    shape=(h, w),
                                    image_np=image_np,
-                                   prompts=prompts)
+                                   prompts=["nothing"])
 
     elif cfg['temporal_setting'] == 'online':
         if ti % cfg['detection_every'] == 0:
             # incorporate new detections
-            mask, segments_info = make_segmentation_with_text(cfg, image_np, gd_model, sam_model,clip_model, 
-                                                            clip_preprocess, prompts, new_min_side)
+            mask, segments_info = make_segmentation_with_custom(cfg, image_np, seg_model, clip_model, 
+                                                            clip_preprocess)
             frame_info.segments_info = segments_info
             prob = deva.incorporate_detection(image, mask, segments_info)
         else:
@@ -123,4 +97,4 @@ def process_frame_with_text(deva: DEVAInferenceCore,
                                need_resize=need_resize,
                                shape=(h, w),
                                image_np=image_np,
-                               prompts=prompts)
+                               prompts=["nothing"])

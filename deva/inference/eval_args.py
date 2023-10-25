@@ -6,6 +6,7 @@ from deva.model.network import DEVA
 
 def add_common_eval_args(parser: ArgumentParser):
     parser.add_argument('--model', default='./saves/DEVA-propagation.pth')
+    parser.add_argument('--gsam', action='store_true')
 
     parser.add_argument('--output', default=None)
     parser.add_argument(
@@ -60,6 +61,10 @@ def get_model_and_config(parser: ArgumentParser):
     args = parser.parse_args()
     config = vars(args)
     config['enable_long_term'] = not config['disable_long_term']
+
+    if args.gsam and args.prompt == None: # for Scannet
+        with open(f"{args.prompt_file}", 'r') as f:
+            args.prompt = f.read().splitlines()[0]
 
     # Load our checkpoint
     network = DEVA(config).cuda().eval()

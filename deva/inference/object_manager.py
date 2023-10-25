@@ -15,6 +15,8 @@ class ObjectManager:
         self.tmp_id_to_obj: Dict[int, ObjectInfo] = {}
         self.obj_id_to_obj: Dict[int, ObjectInfo] = {}
 
+        self.obj_id_to_obj_hist = {}
+
         # We keep track of all historical object IDs to avoid collision
         # even removed object IDs stay in this set
         self.all_historical_object_ids: Set[int] = set()
@@ -60,6 +62,8 @@ class ObjectManager:
             self.all_historical_object_ids.add(new_obj.id)
             corresponding_tmp_ids.append(new_tmp_id)
             corresponding_obj_ids.append(new_obj.id)
+
+            self.obj_id_to_obj_hist[new_obj.id] = new_obj
 
         self._recompute_obj_id_to_obj_mapping()
         assert corresponding_tmp_ids == sorted(corresponding_tmp_ids), 'tmp id assignment bugged'
@@ -148,6 +152,18 @@ class ObjectManager:
                 'id': int(obj.id),
                 'score': obj.vote_score(),
             })
+        return segments_info
+
+    def get_all_obj_summary(self) -> List[Dict]:
+        segments_info = {}
+        for _, obj in self.obj_id_to_obj_hist.items():
+            assert int(obj.id) not in segments_info
+            segments_info[int(obj.id)] = {
+                'category_id': obj.vote_category_id(),
+                'score': obj.vote_score(),
+                'hidden_state_seg': obj.vote_hidden_states_seg(),
+                'hidden_state_clip': obj.vote_hidden_states_clip(),
+            }
         return segments_info
 
     @property

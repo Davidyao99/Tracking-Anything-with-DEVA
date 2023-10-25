@@ -19,6 +19,7 @@ import numpy as np
 import torch
 
 from deva.inference.object_info import ObjectInfo
+from PIL import Image
 
 
 def get_grounding_dino_model(config: Dict, device: str) -> (GroundingDINOModel, SamPredictor):
@@ -50,8 +51,31 @@ def get_grounding_dino_model(config: Dict, device: str) -> (GroundingDINOModel, 
 
     return gd_model, sam
 
+def get_hidden_states_clip(clip_model, clip_preprocess, image, detections):
 
-def segment_with_text(config: Dict, gd_model: GroundingDINOModel, sam: SamPredictor,
+    crops = []
+    h,w = image.shape[:2]
+    for box in detections.xyxy:
+        crop = image[max(0,int(box[1])):min(h,int(box[3])), max(0,int(box[0])): min(w,int(box[2]))]
+        crop_image = Image.fromarray(crop)
+        crop = clip_preprocess(crop_image)
+        crops.append(crop)
+
+    if len(crops) == 0:
+        return []
+
+    crops_torch = torch.from_numpy(np.stack(crops)).to('cuda')
+
+    with torch.no_grad():
+        logits = clip_model.encode_image(crops_torch)
+        logits_cpu = logits.cpu().numpy()
+
+    torch.cuda.empty_cache()
+
+    return logits_cpu
+
+def segment_with_text(config: Dict, gd_model: GroundingDINOModel, sam: SamPredictor, clip_model, 
+                    clip_preprocess,
                       image: np.ndarray, prompts: List[str],
                       min_side: int) -> (torch.Tensor, List[ObjectInfo]):
     """
@@ -70,7 +94,7 @@ def segment_with_text(config: Dict, gd_model: GroundingDINOModel, sam: SamPredic
 
     # detect objects
     # GroundingDINO uses BGR
-    detections = gd_model.predict_with_classes(image=cv2.cvtColor(image, cv2.COLOR_RGB2BGR),
+    detections, hidden_states_gdino = gd_model.predict_with_classes(image=cv2.cvtColor(image, cv2.COLOR_RGB2BGR),
                                                classes=prompts,
                                                box_threshold=BOX_THRESHOLD,
                                                text_threshold=TEXT_THRESHOLD)
@@ -82,6 +106,9 @@ def segment_with_text(config: Dict, gd_model: GroundingDINOModel, sam: SamPredic
     detections.xyxy = detections.xyxy[nms_idx]
     detections.confidence = detections.confidence[nms_idx]
     detections.class_id = detections.class_id[nms_idx]
+
+    hidden_states_gdino = hidden_states_gdino[nms_idx]
+    hidden_states_clip = get_hidden_states_clip(clip_model, clip_preprocess, image, detections)
 
     result_masks = []
     for box in detections.xyxy:
@@ -107,13 +134,17 @@ def segment_with_text(config: Dict, gd_model: GroundingDINOModel, sam: SamPredic
         mask = detections.mask[i]
         confidence = detections.confidence[i]
         class_id = detections.class_id[i]
+        hidden_state_gdino = hidden_states_gdino[i]
+        hidden_state_clip = hidden_states_clip[i]
+
         mask = torch.from_numpy(mask.astype(np.float32))
         mask = F.interpolate(mask.unsqueeze(0).unsqueeze(0), (new_h, new_w), mode='bilinear')[0, 0]
         mask = (mask > 0.5).float()
 
         if mask.sum() > 0:
             output_mask[mask > 0] = curr_id
-            segments_info.append(ObjectInfo(id=curr_id, category_id=class_id, score=confidence))
+            segments_info.append(ObjectInfo(id=curr_id, category_id=class_id, score=confidence, 
+            hidden_state_seg=hidden_state_gdino, hidden_state_clip=hidden_state_clip))
             curr_id += 1
 
     return output_mask, segments_info

@@ -66,7 +66,7 @@ class ResultSaver:
             self.all_annotations = []
             self.video_json = {'annotations': self.all_annotations}
             self.json_style = 'vipseg'
-            self.visualize = True
+            self.visualize = False
             self.visualize_postfix = 'Visualizations'
             self.output_postfix = 'Annotations'
         elif self.dataset == 'gradio':
@@ -120,6 +120,9 @@ class ResultSaver:
         self.queue.put(None)
         self.queue.join()
         self.thread.join()
+
+    def get_all_obj_summary(self): # retrieve all hidden states representation for objects at the end of the video
+        return self.object_manager.get_all_obj_summary()
 
 
 @dataclass
@@ -279,3 +282,5 @@ def save_result(queue: Queue):
                     saver.writer.write(blend[:, :, ::-1])
 
         queue.task_done()
+
+    

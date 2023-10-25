@@ -1,5 +1,6 @@
 # Evaluation arguments for extensions
 from argparse import ArgumentParser
+import argparse
 
 
 def add_ext_eval_args(parser: ArgumentParser):
@@ -55,6 +56,7 @@ def add_text_default_args(parser):
                         type=int,
                         help='Max. num of objects to keep in memory. -1 for no limit')
     parser.add_argument('--prompt', type=str, help='Separate classes with a single fullstop')
+    parser.add_argument('--prompt_file', type=str, help='Path to prompt file')
     parser.add_argument('--sam_variant', default='original', help='mobile/original')
     return parser
 
@@ -76,5 +78,43 @@ def add_auto_default_args(parser):
 
     parser.add_argument('--sam_variant', default='original', help='mobile/original')
     parser.add_argument('--suppress_small_objects', action='store_true')
+
+    return parser
+
+def add_custom_default_args(parser):
+    parser.add_argument('--img_path', default='./example/vipseg')
+    parser.add_argument('--detection_every', type=int, default=5)
+    parser.add_argument('--num_voting_frames',
+                        default=3,
+                        type=int,
+                        help='Number of frames selected for voting. only valid in semionline')
+    parser.add_argument('--dataset', default='vipseg', help='vipseg/burst/unsup_davis17/demo')
+    parser.add_argument('--max_missed_detection_count', type=int, default=2)
+
+    parser.add_argument('--temporal_setting', default='semionline', help='semionline/online')
+    parser.add_argument('--max_num_objects',
+                        default=-1,
+                        type=int,
+                        help='Max. num of objects to keep in memory. -1 for no limit')
+
+    return parser
+
+def add_mask2former_args(parser):
+
+    parser.add_argument(
+        "--config-file",
+        default="configs/coco/panoptic-segmentation/maskformer2_R50_bs16_50ep.yaml",
+        metavar="FILE",
+        help="path to config file",
+    )
+
+    parser.add_argument(
+        "--opts",
+        help="Modify config options using the command-line 'KEY VALUE' pairs",
+        default=[],
+        nargs=argparse.REMAINDER,
+    )
+
+    parser.add_argument('--custom_seg_threshold', default=0.6, type=float)
 
     return parser
