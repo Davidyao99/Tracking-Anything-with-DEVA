@@ -43,6 +43,7 @@ def add_ext_eval_args(parser: ArgumentParser):
 
 def add_text_default_args(parser):
     parser.add_argument('--img_path', default='./example/vipseg')
+    parser.add_argument('--work_dir', type=str)
     parser.add_argument('--detection_every', type=int, default=5)
     parser.add_argument('--num_voting_frames',
                         default=3,

@@ -1,6 +1,7 @@
 import os
 from os import path
 from argparse import ArgumentParser
+from pathlib import Path
 
 import torch
 from torch.utils.data import DataLoader
@@ -38,50 +39,64 @@ if __name__ == '__main__':
 
     clip_model, clip_preprocess = clip.load("ViT-L/14", device='cuda', download_root="/home/dyyao2/scratch/")
 
-    if not os.path.exists(args.output):
-        os.makedirs(args.output)
-        
-    with open(f"{args.output}/args.txt", 'w') as f:
-        json.dump(args.__dict__, f, indent=2)
-
     """
     Temporal setting
     """
     cfg['temporal_setting'] = args.temporal_setting.lower()
     assert cfg['temporal_setting'] in ['semionline', 'online']
 
-    # get data
-    video_reader = SimpleVideoReader(cfg['img_path'])
-    loader = DataLoader(video_reader, batch_size=None, collate_fn=no_collate, num_workers=8)
-    out_path = cfg['output']
+    assert(cfg['work_dir'] not None)
 
-    # Start eval
-    vid_length = len(loader)
-    # no need to count usage for LT if the video is not that long anyway
-    cfg['enable_long_term_count_usage'] = (
-        cfg['enable_long_term']
-        and (vid_length / (cfg['max_mid_term_frames'] - cfg['min_mid_term_frames']) *
-             cfg['num_prototypes']) >= cfg['max_long_term_elements'])
+    videos = sorted(os.listdir(cfg['work_dir']))
 
-    print('Configuration:', cfg)
+    divider = 5
+    mod = 0
 
-    deva = DEVAInferenceCore(deva_model, config=cfg)
-    deva.next_voting_frame = cfg['num_voting_frames'] - 1
-    deva.enabled_long_id()
-    result_saver = ResultSaver(out_path, None, dataset='demo', object_manager=deva.object_manager)
+    for i, video in enumerate(videos):
 
-    with torch.cuda.amp.autocast(enabled=cfg['amp']):
-        for ti, (frame, im_path) in enumerate(tqdm(loader)):
-            process_frame(deva, gd_model, sam_model, clip_model, clip_preprocess, im_path, result_saver, ti, image_np=frame)
-            # process_frame(deva, gd_model, sam_model, im_path, result_saver, ti, image_np=frame)
-        flush_buffer(deva, result_saver)
-    result_saver.end()
+        if i % divider != mod:
+            continue
 
-    # save this as a video-level json
-    with open(path.join(out_path, 'pred.json'), 'w') as f:
-        json.dump(result_saver.video_json, f, indent=4)  # prettier json
+        img_path = path.join(cfg['work_dir'], video, 'color')
+        out_path = path.join(cfg['work_dir'], video, 'results', 'gsam')
 
-    obj_summary = result_saver.get_all_obj_summary()
+        if not os.path.exists(out_path):
+            os.makedirs(out_path)
+            
+        with open(f"{out_path}/args.txt", 'w') as f:
+            json.dump(args.__dict__, f, indent=2)
 
-    with open(path.join(out_path, 'tracklets.json'), 'w') as f:
-        json.dump(obj_summary, f, indent=4)  # prettier json
+        # get data
+        video_reader = SimpleVideoReader(cfg['img_path'])
+        loader = DataLoader(video_reader, batch_size=None, collate_fn=no_collate, num_workers=8)
+
+        # Start eval
+        vid_length = len(loader)
+        # no need to count usage for LT if the video is not that long anyway
+        cfg['enable_long_term_count_usage'] = (
+            cfg['enable_long_term']
+            and (vid_length / (cfg['max_mid_term_frames'] - cfg['min_mid_term_frames']) *
+                cfg['num_prototypes']) >= cfg['max_long_term_elements'])
+
+        deva = DEVAInferenceCore(deva_model, config=cfg)
+        deva.next_voting_frame = cfg['num_voting_frames'] - 1
+        deva.enabled_long_id()
+        result_saver = ResultSaver(out_path, None, dataset='demo', object_manager=deva.object_manager)
+
+        with torch.cuda.amp.autocast(enabled=cfg['amp']):
+            for ti, (frame, im_path) in enumerate(tqdm(loader)):
+                process_frame(deva, gd_model, sam_model, clip_model, clip_preprocess, im_path, result_saver, ti, image_np=frame)
+                # process_frame(deva, gd_model, sam_model, im_path, result_saver, ti, image_np=frame)
+            flush_buffer(deva, result_saver)
+        result_saver.end()
+
+        # save this as a video-level json
+        with open(path.join(out_path, 'pred.json'), 'w') as f:
+            json.dump(result_saver.video_json, f, indent=4)  # prettier json
+
+        obj_summary = result_saver.get_all_obj_summary()
+
+        with open(path.join(out_path, 'tracklets.json'), 'w') as f:
+            json.dump(obj_summary, f, indent=4)  # prettier json
+
+        Path(os.path.join(out_path, "done.txt")).touch()
