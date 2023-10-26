@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH --job-name=deva_test                     # sets the job name
-#SBATCH --output=deva_test_output.txt 
-#SBATCH --error=deva_test_error.txt                             # indicates a file to redirect STDERR to; %j is the jobid. Must be set to a file instead of a directory or else submission will fail.
+#SBATCH --job-name=deva_gsam_4                     # sets the job name
+#SBATCH --output=deva_gsam_4_output.txt 
+#SBATCH --error=deva_gsam_4_error.txt                             # indicates a file to redirect STDERR to; %j is the jobid. Must be set to a file instead of a directory or else submission will fail.
 #SBATCH --time=70:00:00                                         # how long you think your job will take to complete; format=hh:mm:ss
 #SBATCH --partition=shenlong2                                     # set QOS, this will determine what resources can be requested
 #SBATCH --nodes=1                                               # number of nodes to allocate for your job
@@ -16,7 +16,8 @@ eval "$(conda shell.bash hook)"
 conda activate deva_custom
 module load cuda/.11.6
 
-bash deva_grounding_sam.sh /projects/perception/personals/david/OVIR-3D_V1/ScanNet 50 0
+# bash deva_grounding_sam.sh /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/ 3 0
+bash deva_grounding_sam.sh /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/ 8 4
 # export PYTHONPATH=/home/${USER}/scratch/adt:${PYTHONPATH}
 
 # python3 make_video.py

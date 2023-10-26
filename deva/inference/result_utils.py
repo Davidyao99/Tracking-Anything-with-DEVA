@@ -231,7 +231,8 @@ def save_result(queue: Queue):
                     this_out_path = path.join(this_out_path, saver.video_name)
 
                 os.makedirs(this_out_path, exist_ok=True)
-                out_img.save(path.join(this_out_path, frame_name[:-4] + '.png'))
+                np.save(path.join(this_out_path, frame_name[:-4] + '.npy'), out_mask)
+                # out_img.save(path.join(this_out_path, frame_name[:-4] + '.png'))
 
             if saver.visualize:
                 if image_np is None:
