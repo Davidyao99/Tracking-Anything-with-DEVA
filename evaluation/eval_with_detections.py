@@ -31,6 +31,9 @@ Arguments loading
 parser = ArgumentParser()
 parser.add_argument('--img_path', default='./example/vipseg')
 parser.add_argument('--mask_path')
+parser.add_argument('--workdir')
+parser.add_argument('--every', type=int)
+parser.add_argument('--mod', type=int)
 parser.add_argument('--json_path', default=None)
 parser.add_argument('--detection_every', type=int, default=5)
 parser.add_argument('--num_voting_frames',
@@ -38,7 +41,7 @@ parser.add_argument('--num_voting_frames',
                     type=int,
                     help='Number of frames selected for voting. only valid in semionline')
 parser.add_argument('--dataset', default='vipseg', help='vipseg/burst/unsup_davis17/demo')
-parser.add_argument('--max_missed_detection_count', type=int, default=5)
+parser.add_argument('--max_missed_detection_count', type=int, default=2)
 # skip VPQ/STQ computation
 parser.add_argument('--no_metrics', action='store_true')
 
@@ -79,16 +82,18 @@ is_davis = (dataset_name == 'unsup_davis17')
 is_demo = (dataset_name == 'demo')
 
 # try to find json path is not given
-if args.json_path is None:
+if args.json_path is None and args.mask_path is not None:
     if path.exists(path.join(args.mask_path, 'pred.json')):
         args.json_path = path.join(args.mask_path, 'pred.json')
-out_path = args.output
+
+# out_path = args.output
 
 # try to find the real mask path if it is hidden behind pan_pred
-if path.exists(path.join(args.mask_path, 'pan_pred')):
-    args.mask_path = path.join(args.mask_path, 'pan_pred')
+# if path.exists(path.join(args.mask_path, 'pan_pred')):
+#     args.mask_path = path.join(args.mask_path, 'pan_pred')
 if is_vipseg or is_davis or is_demo:
-    meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
+    # meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
+    meta_dataset = VIPSegDetectionTestDataset(args.workdir, args.size)
 elif is_burst:
     meta_dataset = BURSTDetectionTestDataset(args.img_path,
                                              args.mask_path,
@@ -127,7 +132,15 @@ total_frames = 0
 
 # Start eval
 pbar = tqdm(meta_loader, total=len(meta_dataset))
+curr = 0
+
 for vid_reader in pbar:
+
+    if curr % args.every != args.mod:
+        curr += 1
+        continue
+    curr += 1
+
     loader = DataLoader(vid_reader, batch_size=1, shuffle=False, num_workers=2)
     vid_name = vid_reader.vid_name
     pbar.set_description(vid_name)
@@ -138,16 +151,24 @@ for vid_reader in pbar:
         config['enable_long_term']
         and (vid_length / (config['max_mid_term_frames'] - config['min_mid_term_frames']) *
              config['num_prototypes']) >= config['max_long_term_elements'])
+    
+    with open(f"{os.path.join(args.workdir, vid_name)}/args.txt", 'w') as f:
+        json.dump(args.__dict__, f, indent=2)
+    
+    out_path = os.path.join(args.workdir, vid_name, "deva_custom_detic")
+    if not os.path.exists(out_path):
+        os.makedirs(out_path)
 
     try:
         processor = DEVAInferenceCore(network, config=config)
         result_saver = ResultSaver(out_path,
-                                   vid_name,
+                                   None,
                                    dataset=dataset_name,
                                    palette=vid_reader.palette,
                                    object_manager=processor.object_manager)
 
         for ti, data in enumerate(loader):
+            print(f"Working on frame {ti}/{len(loader)} for {vid_name}", end='\r', flush=True)
             with torch.cuda.amp.autocast(enabled=args.amp):
                 image = data['rgb'].cuda()[0]
                 mask = data.get('mask')
@@ -307,9 +328,18 @@ for vid_reader in pbar:
                 json.dump(result_saver.video_json, f)
         elif is_demo:
             # save this as a video-level json in a separate folder
-            os.makedirs(path.join(out_path, 'JSONFiles'), exist_ok=True)
-            with open(path.join(out_path, 'JSONFiles', f'{vid_name}.json'), 'w') as f:
-                json.dump(result_saver.video_json, f, indent=4)
+            # os.makedirs(path.join(out_path, 'JSONFiles'), exist_ok=True)
+            # with open(path.join(out_path, 'JSONFiles', f'{vid_name}.json'), 'w') as f:
+            #     json.dump(result_saver.video_json, f, indent=4)
+
+            # save this as a video-level json in the same folder
+            with open(path.join(out_path, 'pred.json'), 'w') as f:
+                json.dump(result_saver.video_json, f, indent=2)  # prettier json
+
+            obj_summary = result_saver.get_all_obj_summary()
+
+            with open(path.join(out_path, 'tracklets.json'), 'w') as f:
+                json.dump(obj_summary, f, indent=2)  # prettier json
 
     except Exception as e:
         print(f'Runtime error at {vid_name}')

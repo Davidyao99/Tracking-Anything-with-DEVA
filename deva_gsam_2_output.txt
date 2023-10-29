@@ -1,15 +1,289 @@
-working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_00
-saving to scene0025_00
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0015_00
+saving to scene0015_00
 final text_encoder_type: bert-base-uncased
-Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.couch.cabinet.shelf.desk.office chair.pillow.window.monitor.book.box.keyboard.trash can.file cabinet.fan.blinds.telephone.cup.paper towel roll.windowsill.headphones.object', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0015_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0015_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.window.backpack.whiteboard.windowsill.water bottle.object', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0015_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
 Restricted license - for non-production use only - expires 2024-10-28
-working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_02
-saving to scene0046_02
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0030_00
+saving to scene0030_00
 final text_encoder_type: bert-base-uncased
-Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.door.cabinet.desk.bed.sink.toilet.curtain.lamp.towel.clothes.tv.nightstand.ceiling.bathtub.bag.backpack.toilet paper.shoe.mirror.laptop.suitcase.light.mat.doorframe.ledge.light switch.vent.object.trash bin', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0030_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_01
+saving to scene0046_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0064_01
+saving to scene0064_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0064_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_01
+saving to scene0081_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0084_02
+saving to scene0084_02
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0084_02/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_00
+saving to scene0088_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0095_00
+saving to scene0095_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0095_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0095_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.cabinet.window.monitor.keyboard.whiteboard.radiator.doorframe.mouse.object', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0095_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
 Restricted license - for non-production use only - expires 2024-10-28
-working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_02
-saving to scene0081_02
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_02
+saving to scene0100_02
 final text_encoder_type: bert-base-uncased
-Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.sink.toilet.towel.counter.stool.bathtub.toilet paper.trash can.toilet paper holder.shower wall.mat.soap dish.shower door.bathroom cabinet', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0139_00
+saving to scene0139_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0139_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_01
+saving to scene0146_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.sink.toilet.backpack.toilet paper.trash can.mirror.rail.soap dispenser.object', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0153_01
+saving to scene0153_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0153_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_03
+saving to scene0164_03
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_03/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0187_01
+saving to scene0187_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0187_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0203_00
+saving to scene0203_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0203_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0207_01
+saving to scene0207_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0207_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0221_01
+saving to scene0221_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0221_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0231_01
+saving to scene0231_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0231_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0251_00
+saving to scene0251_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0251_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_00
+saving to scene0277_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.door.cabinet.shelf.desk.bed.window.dresser.trash can.radiator.recycling bin', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0278_01
+saving to scene0278_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0278_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0307_01
+saving to scene0307_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0307_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0328_00
+saving to scene0328_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0328_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0334_00
+saving to scene0334_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0334_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0338_01
+saving to scene0338_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0338_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0351_00
+saving to scene0351_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0351_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0353_02
+saving to scene0353_02
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0353_02/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_00
+saving to scene0356_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0357_01
+saving to scene0357_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0357_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_00
+saving to scene0378_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0382_01
+saving to scene0382_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0382_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_02
+saving to scene0406_02
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_02/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0427_00
+saving to scene0427_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0427_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_01
+saving to scene0432_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_03
+saving to scene0435_03
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_03/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0461_00
+saving to scene0461_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0461_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_02
+saving to scene0474_02
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.door.couch.desk.office chair.pillow.window.bookshelf.monitor.ceiling.keyboard.backpack.whiteboard.computer tower.laptop.recycling bin.telephone.cart.decoration.paper bag', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0490_00
+saving to scene0490_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0490_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_01
+saving to scene0500_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0550_00
+saving to scene0550_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0550_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_01
+saving to scene0553_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_02
+saving to scene0558_02
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.window.bookshelf.book.armchair.lamp.plant.backpack', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0565_00
+saving to scene0565_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0565_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0580_00
+saving to scene0580_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0580_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0583_02
+saving to scene0583_02
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0583_02/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0593_00
+saving to scene0593_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0593_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0598_01
+saving to scene0598_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0598_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_02
+saving to scene0599_02
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_02/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0607_00
+saving to scene0607_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0607_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_02
+saving to scene0608_02
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_02/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_03
+saving to scene0609_03
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_03/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0621_00
+saving to scene0621_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0621_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0633_00
+saving to scene0633_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0633_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0645_00
+saving to scene0645_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0645_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0647_01
+saving to scene0647_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0647_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_01
+saving to scene0651_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0653_01
+saving to scene0653_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0653_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0658_00
+saving to scene0658_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0658_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0663_02
+saving to scene0663_02
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0663_02/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0670_00
+saving to scene0670_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0670_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0678_00
+saving to scene0678_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0678_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_01
+saving to scene0684_01
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_01/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_00
+saving to scene0686_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0690_00
+saving to scene0690_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0690_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_02
+saving to scene0693_02
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_02/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_03
+saving to scene0695_03
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_03/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_00
+saving to scene0697_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0699_00
+saving to scene0699_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0699_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0699_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.door.cabinet.bed.pillow.picture.window.toilet.book.box.clothes.nightstand.bag.backpack.blanket.closet.doorframe.tissue box.closet door.closet rod', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0699_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_00
+saving to scene0701_00
+final text_encoder_type: bert-base-uncased
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_00/color, skip it.
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_01
+saving to scene0702_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.toilet.towel.ceiling.bathtub.toilet paper.shower curtain.trash can.bench.rail.telephone.shower wall.ironing board.soap dish.doorframe.bathroom vanity', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
 Restricted license - for non-production use only - expires 2024-10-28

@@ -23,3 +23,722 @@ saving to scene0164_00
 final text_encoder_type: bert-base-uncased
 Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.picture.box.refrigerator.kitchen cabinet.towel.counter.ceiling.bag.backpack.microwave.stove.oven.coffee maker.dishwasher.paper towel roll.toaster.dish rack.range hood.water bottle.object.coffee kettle', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
 Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0193_00
+saving to scene0193_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0193_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0193_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.desk.office chair.bed.curtain.ceiling.trash can', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0193_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0208_00
+saving to scene0208_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0208_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0208_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'table.bookshelf.book.ceiling.bench', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0208_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0246_00
+saving to scene0246_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0246_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0246_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.cabinet.shelf.bed.pillow.sink.picture.toilet.curtain.lamp.towel.nightstand.dresser.stool.ceiling.shower curtain.mirror.wardrobe.light.object.bathroom cabinet', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0246_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0300_00
+saving to scene0300_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0300_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0300_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.picture.window.bookshelf.monitor.ceiling.backpack.trash can.divider', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0300_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_01
+saving to scene0329_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.door.couch.shelf.picture.monitor.coffee table.lamp.ceiling.backpack.whiteboard.trash can.computer tower.bottle.board.file cabinet.recycling bin.doorframe.object', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0342_00
+saving to scene0342_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0342_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0342_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.backpack.whiteboard', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0342_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+GurobiError, falling back to pulp
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_00
+saving to scene0356_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.door.shelf.desk.bed.window.dresser.radiator.recycling bin.telephone.doorframe.power outlet.trash bin', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_00
+saving to scene0378_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.door.cabinet.desk.office chair.window.bookshelf.monitor.book.ceiling.printer.trash can.shoe.board.file cabinet.paper.blackboard.clock.cup.jacket', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_02
+saving to scene0406_02
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.sink.picture.toilet.towel.ceiling.bathtub.shower curtain.trash can.mirror.shower wall.doorframe.bathroom vanity', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_01
+saving to scene0432_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.coffee table.object', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': False}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0461_00
+saving to scene0461_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0461_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0461_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'table.window.armchair.coffee table.ceiling', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0461_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_01
+saving to scene0500_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.cabinet.window.ceiling.whiteboard.trash can.blackboard.recycling bin', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_01
+saving to scene0553_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.sink.toilet.backpack.toilet paper.mirror.soap dispenser.bar.toilet paper dispenser.trash bin', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_02
+saving to scene0574_02
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'table.door.sink.towel.ceiling.bag.trash can.shoe.bench.mirror.ironing board.soap dish.doorframe.hair dryer.bathroom vanity', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_02
+saving to scene0591_02
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.door.couch.cabinet.shelf.desk.pillow.window.bookshelf.monitor.box.plant.keyboard.backpack.whiteboard.trash can.file cabinet.fan.telephone', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_01
+saving to scene0599_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.door.window.tv.backpack.whiteboard.trash can.paper towel dispenser.telephone.doorframe', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_01
+saving to scene0608_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.couch.pillow.picture.window.curtain.coffee table.lamp.tv.plant.ceiling.end table.tv stand.ottoman.sofa chair.guitar.keyboard piano', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0618_00
+saving to scene0618_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0618_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0618_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.window.radiator.column', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0618_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0644_00
+saving to scene0644_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0644_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0644_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.door.cabinet.shelf.window.monitor.keyboard.whiteboard.trash can.computer tower.radiator.pipe.windowsill', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0644_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_00
+saving to scene0651_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.sink.refrigerator.kitchen cabinet.ceiling.dining table.stove.recycling bin.kitchen counter.range hood', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_02
+saving to scene0655_02
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.ceiling.whiteboard.projector screen.object', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_02
+saving to scene0664_02
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.shelf.sink.picture.toilet.towel.ceiling.bathtub.bag.toilet paper.shower curtain.trash can.mirror.shower wall.doorframe.light switch.bathroom counter.object.shower head', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_00
+saving to scene0684_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.door.window.box.bag.telephone.doorframe.power outlet.object', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_00
+saving to scene0693_00
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_00/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_00/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'door.sink.window.toilet.towel.bathtub.trash can.bottle.mirror.container.shower wall.soap dish.doorframe.shower door.tissue box.object.bathroom vanity', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_00/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_01
+saving to scene0696_01
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_01/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_01/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'chair.table.door.couch.cabinet.shelf.pillow.curtain.box.tv.ceiling.basket.radiator.object.mattress', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_01/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_02
+saving to scene0701_02
+final text_encoder_type: bert-base-uncased
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': True, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_02/results/deva_gsam', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'GROUNDING_DINO_CONFIG_PATH': './saves/GroundingDINO_SwinT_OGC.py', 'GROUNDING_DINO_CHECKPOINT_PATH': './saves/groundingdino_swint_ogc.pth', 'DINO_THRESHOLD': 0.35, 'DINO_NMS_THRESHOLD': 0.7, 'SAM_ENCODER_VERSION': 'vit_h', 'SAM_CHECKPOINT_PATH': './saves/sam_vit_h_4b8939.pth', 'MOBILE_SAM_CHECKPOINT_PATH': './saves/mobile_sam.pt', 'SAM_NUM_POINTS_PER_SIDE': 64, 'SAM_NUM_POINTS_PER_BATCH': 64, 'SAM_PRED_IOU_THRESHOLD': 0.88, 'SAM_OVERLAP_THRESHOLD': 0.8, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_02/color', 'work_dir': None, 'detection_every': 5, 'num_voting_frames': 3, 'temporal_setting': 'semionline', 'max_missed_detection_count': 2, 'max_num_objects': -1, 'prompt': 'couch.coffee table.backpack.pillar', 'prompt_file': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_02/prompt.txt', 'sam_variant': 'original', 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28

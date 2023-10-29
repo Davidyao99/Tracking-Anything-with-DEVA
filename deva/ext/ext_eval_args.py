@@ -97,6 +97,7 @@ def add_custom_default_args(parser):
                         default=-1,
                         type=int,
                         help='Max. num of objects to keep in memory. -1 for no limit')
+    parser.add_argument("--custom_seg_threshold", type=float, default=0.7)
 
     return parser
 
@@ -115,7 +116,32 @@ def add_mask2former_args(parser):
         default=[],
         nargs=argparse.REMAINDER,
     )
+    parser.add_argument("--custom_mask_filter_threshold", type=int, default=50)
 
-    parser.add_argument('--custom_seg_threshold', default=0.6, type=float)
+    return parser
+
+def add_detic_args(parser):
+
+    parser.add_argument(
+        "--config-file",
+        default="Detic/configs/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.yaml",
+        metavar="FILE",
+        help="path to config file",
+    )
+
+    parser.add_argument("--vocabulary", default="imagenet21k", choices=['lvis', 'custom', 'ycb_video',
+                                                                 'scannet200', 'imagenet21k'])
+    parser.add_argument("--custom_vocabulary", default="", help="comma separated words")
+    parser.add_argument("--pred_all_class", action='store_true')
+    parser.add_argument("--confidence-threshold", type=float, default=0.3)
+
+    parser.add_argument(
+        "--opts",
+        help="Modify config options using the command-line 'KEY VALUE' pairs",
+        default=[],
+        nargs=argparse.REMAINDER,
+    )
+    
+    parser.add_argument("--custom_mask_filter_threshold", type=int, default=25)
 
     return parser

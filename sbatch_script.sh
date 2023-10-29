@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#SBATCH --job-name=deva_gsam_4                     # sets the job name
-#SBATCH --output=deva_gsam_4_output.txt 
-#SBATCH --error=deva_gsam_4_error.txt                             # indicates a file to redirect STDERR to; %j is the jobid. Must be set to a file instead of a directory or else submission will fail.
+#SBATCH --job-name=deva_detic_split_1                  # sets the job name
+#SBATCH --output=deva_detic_split_1_output.txt 
+#SBATCH --error=deva_detic_split_1_error.txt                             # indicates a file to redirect STDERR to; %j is the jobid. Must be set to a file instead of a directory or else submission will fail.
 #SBATCH --time=70:00:00                                         # how long you think your job will take to complete; format=hh:mm:ss
 #SBATCH --partition=shenlong2                                     # set QOS, this will determine what resources can be requested
 #SBATCH --nodes=1                                               # number of nodes to allocate for your job
 #SBATCH --ntasks-per-node=1                                              # request 4 cpu cores be reserved for your node total
-#SBATCH --mem=32gb                                               # memory required by job; if unit is not specified MB will be assumed
+#SBATCH --mem=24gb                                               # memory required by job; if unit is not specified MB will be assumed
 #SBATCH --gres=gpu:1                                            # specify gpu usage, make sure your program is optimized to use this
 #SBATCH --cpus-per-task=1                                      # number of cpu-cores per task
 
@@ -17,7 +17,10 @@ conda activate deva_custom
 module load cuda/.11.6
 
 # bash deva_grounding_sam.sh /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/ 3 0
-bash deva_grounding_sam.sh /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/ 8 4
+# bash deva_grounding_sam.sh /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/ 4 3
+# bash deva_mask2former.sh /projects/perception/personals/david/OVIR-3D_V1/ScanNet_val_split 1 0
+# bash deva_mask2former.sh /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/ 1 0
+bash deva_detic.sh /projects/perception/personals/david/OVIR-3D_V1/ScanNet_val_split 3 1
 # export PYTHONPATH=/home/${USER}/scratch/adt:${PYTHONPATH}
 
 # python3 make_video.py

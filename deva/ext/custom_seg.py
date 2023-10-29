@@ -51,7 +51,14 @@ def make_segmentation_with_custom(cfg, image, seg_model, clip_model, clip_prepro
     selected_indexes = (pred_scores >= cfg['custom_seg_threshold']).detach().numpy()
     selected_scores = pred_scores[selected_indexes].detach().numpy()
     selected_masks  = pred_masks[selected_indexes].detach().numpy()
+    areas = selected_masks.sum(axis=(1,2))
+    
     _, m_H, m_W = selected_masks.shape
+
+    selected_indexes = areas > cfg['custom_mask_filter_threshold'] # filter out small masks
+
+    selected_scores = selected_scores[selected_indexes]
+    selected_masks  = selected_masks[selected_indexes]
 
     boxes = []
 
@@ -73,14 +80,14 @@ def make_segmentation_with_custom(cfg, image, seg_model, clip_model, clip_prepro
     segments_info = []
 
     for i in range(len(selected_masks)):
-        segments_info.append(ObjectInfo(id=curr_id, category_id=0, score=selected_scores[i].item(),hidden_state_seg=hidden_states[i].tolist()))
+        segments_info.append(ObjectInfo(id=curr_id, category_id=0, score=selected_scores[i].item(),hidden_state_clip=hidden_states[i].tolist()))
         output_mask[selected_masks[i] > 0] = curr_id
         curr_id += 1
 
     return output_mask, segments_info
 
 
-
+ 
 # def segment_with_text(config: Dict, gd_model: GroundingDINOModel, sam: SamPredictor, clip_model, 
 #                     clip_preprocess,
 #                       image: np.ndarray, prompts: List[str],

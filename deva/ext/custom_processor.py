@@ -12,6 +12,29 @@ from deva.inference.result_utils import ResultSaver
 from deva.inference.demo_utils import get_input_frame_for_deva
 from deva.ext.custom_seg import make_segmentation_with_custom
 
+def idx_to_color(idx):
+
+    if idx == 0:
+        return np.array([0, 0, 0], dtype=np.uint8)
+    np.random.seed(idx) # randomly assign to some color, for visualizing gt
+    id = np.random.randint(0, 256**3)
+
+
+    rgb = np.zeros((3, ), dtype=np.uint8)
+    for i in range(3):
+        rgb[i] = id % 256
+        id = id // 256
+    return rgb 
+
+def visualize_mask(mask):
+
+    mask_vis = np.zeros((mask.shape[0], mask.shape[1], 3), dtype=np.uint8)
+
+    for idx in np.unique(mask):
+        mask_vis[mask==idx] = idx_to_color(idx)
+
+    return mask_vis
+
 @torch.inference_mode()
 def process_frame_custom(deva, seg_model, clip_model, clip_preprocess, frame_path, result_saver, ti, image_np):
 
@@ -35,6 +58,11 @@ def process_frame_custom(deva, seg_model, clip_model, clip_preprocess, frame_pat
         if ti + cfg['num_voting_frames'] > deva.next_voting_frame:
             mask, segments_info = make_segmentation_with_custom(cfg, image_np, seg_model, clip_model, 
                                                             clip_preprocess)
+            
+            # custom_mask = mask.clone().detach().cpu().numpy()
+            # vis_mask = visualize_mask(custom_mask)
+            # cv2.imwrite(f"/projects/perception/personals/david/OVIR-3D_V1/ScanNet/scene0011_01/deva_custom_detic/entityseg/entity_seg_{ti}.png", vis_mask)
+
             frame_info.mask = mask
             frame_info.segments_info = segments_info
             frame_info.image_np = image_np  # for visualization only

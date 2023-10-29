@@ -20,8 +20,11 @@ class ObjectInfo:
         self.category_ids = [category_id]
         self.scores = [score]
         self.isthing = isthing
-        self.hidden_states_seg = [hidden_state_seg]
-        self.hidden_states_clip = [hidden_state_clip]
+        self.hidden_states_clip = np.array(hidden_state_clip)
+        if hidden_state_seg is not None:
+            self.hidden_states_seg = np.array(hidden_state_seg)
+        else:
+            self.hidden_states_seg = None
         self.poke_count = 0  # number of detections since last this object was last seen
 
     def poke(self) -> None:
@@ -31,10 +34,14 @@ class ObjectInfo:
         self.poke_count = 0
 
     def merge(self, other) -> None:
+
+        self.hidden_states_clip = (self.hidden_states_clip * len(self.scores) + other.hidden_states_clip * len(other.scores)) / (len(self.scores) + len(other.scores))
+        if self.hidden_states_seg is not None:
+            self.hidden_states_seg = (self.hidden_states_seg * len(self.scores) + other.hidden_state_seg * len(other.scores)) / (len(self.scores) + len(other.scores))
         self.category_ids.extend(other.category_ids)
         self.scores.extend(other.scores)
-        self.hidden_states_seg.extend(other.hidden_states_seg)
-        self.hidden_states_clip.extend(other.hidden_states_clip)
+        # self.hidden_states_seg.extend(other.hidden_states_seg)
+        # self.hidden_states_clip.extend(other.hidden_states_clip)
 
     def vote_category_id(self) -> Optional[int]:
         category_ids = [c for c in self.category_ids if c is not None]
@@ -51,18 +58,21 @@ class ObjectInfo:
             return float(np.mean(scores))
 
     def vote_hidden_states_seg(self) -> Optional[np.ndarray]:
-        hidden_states_seg = [c for c in self.hidden_states_seg if c is not None]
-        if len(hidden_states_seg) == 0:
+        if self.hidden_states_seg is None:
             return None
         else:
-            return np.mean(np.array(hidden_states_seg), axis=0).tolist()
+            return self.hidden_states_seg.tolist()
+        # if len(hidden_states_seg) == 0:
+        #     return None
+        # else:
+        #     return np.mean(np.array(hidden_states_seg), axis=0).tolist()
 
     def vote_hidden_states_clip(self) -> Optional[np.ndarray]:
-        hidden_states_clip = [c for c in self.hidden_states_clip if c is not None]
-        if len(hidden_states_clip) == 0:
+        # hidden_states_clip = [c for c in self.hidden_states_clip if c is not None]
+        if len(self.hidden_states_clip) == 0:
             return None
         else:
-            return np.mean(np.array(hidden_states_clip), axis=0).tolist()
+            return self.hidden_states_clip.tolist()
 
     def get_rgb(self) -> np.ndarray:
         # this is valid for panoptic segmentation-style id only (0~255**3)

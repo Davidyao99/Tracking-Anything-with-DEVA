@@ -1,0 +1,1152 @@
+working on  : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0011_00
+saving to scene0011_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0011_00/color, skip it.
+working on 1 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0011_01
+saving to scene0011_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0011_01/color, skip it.
+working on 2 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0015_00
+saving to scene0015_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0015_00/color, skip it.
+working on 3 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_00
+saving to scene0025_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_00/color, skip it.
+working on 4 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_01
+saving to scene0025_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_01/color, skip it.
+working on 5 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_02
+saving to scene0025_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0025_02/color, skip it.
+working on 6 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0030_00
+saving to scene0030_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0030_00/color, skip it.
+working on 7 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0030_01
+saving to scene0030_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0030_01/color, skip it.
+working on 8 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0030_02
+saving to scene0030_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0030_02/color, skip it.
+working on 9 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_00
+saving to scene0046_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_00/color, skip it.
+working on 10 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_01
+saving to scene0046_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_01/color, skip it.
+working on 11 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_02
+saving to scene0046_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0046_02/color, skip it.
+working on 12 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0063_00
+saving to scene0063_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0063_00/color, skip it.
+working on 13 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0064_00
+saving to scene0064_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0064_00/color, skip it.
+working on 14 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0064_01
+saving to scene0064_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0064_01/color, skip it.
+working on 15 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0077_00
+saving to scene0077_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0077_00/color, skip it.
+working on 16 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0077_01
+saving to scene0077_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0077_01/color, skip it.
+working on 17 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_00
+saving to scene0081_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_00/color, skip it.
+working on 18 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_01
+saving to scene0081_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_01/color, skip it.
+working on 19 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_02
+saving to scene0081_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0081_02/color, skip it.
+working on 20 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0084_00
+saving to scene0084_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0084_00/color, skip it.
+working on 21 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0084_01
+saving to scene0084_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0084_01/color, skip it.
+working on 22 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0084_02
+saving to scene0084_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0084_02/color, skip it.
+working on 23 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0086_00
+saving to scene0086_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0086_00/color, skip it.
+working on 24 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0086_01
+saving to scene0086_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0086_01/color, skip it.
+working on 25 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0086_02
+saving to scene0086_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0086_02/color, skip it.
+working on 26 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_00
+saving to scene0088_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_00/color, skip it.
+working on 27 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_01
+saving to scene0088_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_01/color, skip it.
+working on 28 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_02
+saving to scene0088_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_02/color, skip it.
+working on 29 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_03
+saving to scene0088_03
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0088_03/color, skip it.
+working on 30 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0095_00
+saving to scene0095_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0095_00/color, skip it.
+working on 31 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0095_01
+saving to scene0095_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0095_01/color, skip it.
+working on 32 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_00
+saving to scene0100_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_00/color, skip it.
+working on 33 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_01
+saving to scene0100_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_01/color, skip it.
+working on 34 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_02
+saving to scene0100_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0100_02/color, skip it.
+working on 35 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0131_00
+saving to scene0131_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0131_00/color, skip it.
+working on 36 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0131_01
+saving to scene0131_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0131_01/color, skip it.
+working on 37 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0131_02
+saving to scene0131_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0131_02/color, skip it.
+working on 38 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0139_00
+saving to scene0139_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0139_00/color, skip it.
+working on 39 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0144_00
+saving to scene0144_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0144_00/color, skip it.
+working on 40 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0144_01
+saving to scene0144_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0144_01/color, skip it.
+working on 41 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_00
+saving to scene0146_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_00/color, skip it.
+working on 42 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_01
+saving to scene0146_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_01/color, skip it.
+working on 43 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_02
+saving to scene0146_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0146_02/color, skip it.
+working on 44 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0149_00
+saving to scene0149_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0149_00/color, skip it.
+working on 45 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0153_00
+saving to scene0153_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0153_00/color, skip it.
+working on 46 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0153_01
+saving to scene0153_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0153_01/color, skip it.
+working on 47 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_00
+saving to scene0164_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_00/color, skip it.
+working on 48 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_01
+saving to scene0164_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_01/color, skip it.
+working on 49 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_02
+saving to scene0164_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_02/color, skip it.
+working on 50 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_03
+saving to scene0164_03
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0164_03/color, skip it.
+working on 51 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0169_00
+saving to scene0169_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0169_00/color, skip it.
+working on 52 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0169_01
+saving to scene0169_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0169_01/color, skip it.
+working on 53 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0187_00
+saving to scene0187_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0187_00/color, skip it.
+working on 54 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0187_01
+saving to scene0187_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0187_01/color, skip it.
+working on 55 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0193_00
+saving to scene0193_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0193_00/color, skip it.
+working on 56 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0193_01
+saving to scene0193_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0193_01/color, skip it.
+working on 57 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0196_00
+saving to scene0196_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0196_00/color, skip it.
+working on 58 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0203_00
+saving to scene0203_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0203_00/color, skip it.
+working on 59 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0203_01
+saving to scene0203_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0203_01/color, skip it.
+working on 60 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0203_02
+saving to scene0203_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0203_02/color, skip it.
+working on 61 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0207_00
+saving to scene0207_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0207_00/color, skip it.
+working on 62 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0207_01
+saving to scene0207_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0207_01/color, skip it.
+working on 63 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0207_02
+saving to scene0207_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0207_02/color, skip it.
+working on 64 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0208_00
+saving to scene0208_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0208_00/color, skip it.
+working on 65 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0221_00
+saving to scene0221_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0221_00/color, skip it.
+working on 66 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0221_01
+saving to scene0221_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0221_01/color, skip it.
+working on 67 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0222_00
+saving to scene0222_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0222_00/color, skip it.
+working on 68 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0222_01
+saving to scene0222_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0222_01/color, skip it.
+working on 69 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0231_00
+saving to scene0231_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0231_00/color, skip it.
+working on 70 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0231_01
+saving to scene0231_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0231_01/color, skip it.
+working on 71 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0231_02
+saving to scene0231_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0231_02/color, skip it.
+working on 72 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0246_00
+saving to scene0246_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0246_00/color, skip it.
+working on 73 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0249_00
+saving to scene0249_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0249_00/color, skip it.
+working on 74 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0251_00
+saving to scene0251_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0251_00/color, skip it.
+working on 75 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0256_00
+saving to scene0256_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0256_00/color, skip it.
+working on 76 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0256_01
+saving to scene0256_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0256_01/color, skip it.
+working on 77 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0256_02
+saving to scene0256_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0256_02/color, skip it.
+working on 78 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_00
+saving to scene0277_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_00/color, skip it.
+working on 79 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_01
+saving to scene0277_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_01/color, skip it.
+working on 80 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_02
+saving to scene0277_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0277_02/color, skip it.
+working on 81 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0278_00
+saving to scene0278_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0278_00/color, skip it.
+working on 82 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0278_01
+saving to scene0278_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0278_01/color, skip it.
+working on 83 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0300_00
+saving to scene0300_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0300_00/color, skip it.
+working on 84 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0300_01
+saving to scene0300_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0300_01/color, skip it.
+working on 85 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0307_00
+saving to scene0307_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0307_00/color, skip it.
+working on 86 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0307_01
+saving to scene0307_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0307_01/color, skip it.
+working on 87 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0307_02
+saving to scene0307_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0307_02/color, skip it.
+working on 88 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0314_00
+saving to scene0314_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0314_00/color, skip it.
+working on 89 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0316_00
+saving to scene0316_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0316_00/color, skip it.
+working on 90 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0328_00
+saving to scene0328_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0328_00/color, skip it.
+working on 91 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_00
+saving to scene0329_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_00/color, skip it.
+working on 92 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_01
+saving to scene0329_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_01/color, skip it.
+working on 93 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_02
+saving to scene0329_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0329_02/color, skip it.
+working on 94 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0334_00
+saving to scene0334_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0334_00/color, skip it.
+working on 95 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0334_01
+saving to scene0334_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0334_01/color, skip it.
+working on 96 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0334_02
+saving to scene0334_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0334_02/color, skip it.
+working on 97 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0338_00
+saving to scene0338_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0338_00/color, skip it.
+working on 98 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0338_01
+saving to scene0338_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0338_01/color, skip it.
+working on 99 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0338_02
+saving to scene0338_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0338_02/color, skip it.
+working on 100 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0342_00
+saving to scene0342_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0342_00/color, skip it.
+working on 101 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0343_00
+saving to scene0343_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0343_00/color, skip it.
+working on 102 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0351_00
+saving to scene0351_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0351_00/color, skip it.
+working on 103 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0351_01
+saving to scene0351_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0351_01/color, skip it.
+working on 104 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0353_00
+saving to scene0353_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0353_00/color, skip it.
+working on 105 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0353_01
+saving to scene0353_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0353_01/color, skip it.
+working on 106 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0353_02
+saving to scene0353_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0353_02/color, skip it.
+working on 107 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0354_00
+saving to scene0354_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0354_00/color, skip it.
+working on 108 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0355_00
+saving to scene0355_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0355_00/color, skip it.
+working on 109 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0355_01
+saving to scene0355_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0355_01/color, skip it.
+working on 110 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_00
+saving to scene0356_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_00/color, skip it.
+working on 111 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_01
+saving to scene0356_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_01/color, skip it.
+working on 112 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_02
+saving to scene0356_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0356_02/color, skip it.
+working on 113 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0357_00
+saving to scene0357_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0357_00/color, skip it.
+working on 114 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0357_01
+saving to scene0357_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0357_01/color, skip it.
+working on 115 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0377_00
+saving to scene0377_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0377_00/color, skip it.
+working on 116 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0377_01
+saving to scene0377_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0377_01/color, skip it.
+working on 117 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0377_02
+saving to scene0377_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0377_02/color, skip it.
+working on 118 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_00
+saving to scene0378_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_00/color, skip it.
+working on 119 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_01
+saving to scene0378_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_01/color, skip it.
+working on 120 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_02
+saving to scene0378_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0378_02/color, skip it.
+working on 121 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0382_00
+saving to scene0382_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0382_00/color, skip it.
+working on 122 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0382_01
+saving to scene0382_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0382_01/color, skip it.
+working on 123 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0389_00
+saving to scene0389_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0389_00/color, skip it.
+working on 124 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_00
+saving to scene0406_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_00/color, skip it.
+working on 125 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_01
+saving to scene0406_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_01/color, skip it.
+working on 126 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_02
+saving to scene0406_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0406_02/color, skip it.
+working on 127 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0423_00
+saving to scene0423_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0423_00/color, skip it.
+working on 128 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0423_01
+saving to scene0423_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0423_01/color, skip it.
+working on 129 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0423_02
+saving to scene0423_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0423_02/color, skip it.
+working on 130 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0427_00
+saving to scene0427_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0427_00/color, skip it.
+working on 131 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0430_00
+saving to scene0430_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0430_00/color, skip it.
+working on 132 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0430_01
+saving to scene0430_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0430_01/color, skip it.
+working on 133 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_00
+saving to scene0432_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_00/color, skip it.
+working on 134 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_01
+saving to scene0432_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0432_01/color, skip it.
+working on 135 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_00
+saving to scene0435_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_00/color, skip it.
+working on 136 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_01
+saving to scene0435_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_01/color, skip it.
+working on 137 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_02
+saving to scene0435_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_02/color, skip it.
+working on 138 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_03
+saving to scene0435_03
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0435_03/color, skip it.
+working on 139 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0441_00
+saving to scene0441_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0441_00/color, skip it.
+working on 140 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0458_00
+saving to scene0458_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0458_00/color, skip it.
+working on 141 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0458_01
+saving to scene0458_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0458_01/color, skip it.
+working on 142 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0461_00
+saving to scene0461_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0461_00/color, skip it.
+working on 143 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0462_00
+saving to scene0462_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0462_00/color, skip it.
+working on 144 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_00
+saving to scene0474_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_00/color, skip it.
+working on 145 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_01
+saving to scene0474_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_01/color, skip it.
+working on 146 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_02
+saving to scene0474_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_02/color, skip it.
+working on 147 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_03
+saving to scene0474_03
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_03/color, skip it.
+working on 148 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_04
+saving to scene0474_04
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_04/color, skip it.
+working on 149 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_05
+saving to scene0474_05
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0474_05/color, skip it.
+working on 150 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0490_00
+saving to scene0490_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0490_00/color, skip it.
+working on 151 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0494_00
+saving to scene0494_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0494_00/color, skip it.
+working on 152 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0496_00
+saving to scene0496_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0496_00/color, skip it.
+working on 153 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_00
+saving to scene0500_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_00/color, skip it.
+working on 154 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_01
+saving to scene0500_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0500_01/color, skip it.
+working on 155 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0518_00
+saving to scene0518_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0518_00/color, skip it.
+working on 156 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0527_00
+saving to scene0527_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0527_00/color, skip it.
+working on 157 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0535_00
+saving to scene0535_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0535_00/color, skip it.
+working on 158 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0550_00
+saving to scene0550_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0550_00/color, skip it.
+working on 159 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0552_00
+saving to scene0552_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0552_00/color, skip it.
+working on 160 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0552_01
+saving to scene0552_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0552_01/color, skip it.
+working on 161 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_00
+saving to scene0553_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_00/color, skip it.
+working on 162 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_01
+saving to scene0553_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_01/color, skip it.
+working on 163 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_02
+saving to scene0553_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0553_02/color, skip it.
+working on 164 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_00
+saving to scene0558_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_00/color, skip it.
+working on 165 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_01
+saving to scene0558_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_01/color, skip it.
+working on 166 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_02
+saving to scene0558_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0558_02/color, skip it.
+working on 167 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0559_00
+saving to scene0559_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0559_00/color, skip it.
+working on 168 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0559_01
+saving to scene0559_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0559_01/color, skip it.
+working on 169 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0559_02
+saving to scene0559_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0559_02/color, skip it.
+working on 170 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0565_00
+saving to scene0565_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0565_00/color, skip it.
+working on 171 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_00
+saving to scene0574_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_00/color, skip it.
+working on 172 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_01
+saving to scene0574_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_01/color, skip it.
+working on 173 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_02
+saving to scene0574_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0574_02/color, skip it.
+working on 174 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0580_00
+saving to scene0580_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0580_00/color, skip it.
+working on 175 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0580_01
+saving to scene0580_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0580_01/color, skip it.
+working on 176 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0583_00
+saving to scene0583_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0583_00/color, skip it.
+working on 177 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0583_01
+saving to scene0583_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0583_01/color, skip it.
+working on 178 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0583_02
+saving to scene0583_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0583_02/color, skip it.
+working on 179 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_00
+saving to scene0591_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_00/color, skip it.
+working on 180 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_01
+saving to scene0591_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_01/color, skip it.
+working on 181 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_02
+saving to scene0591_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0591_02/color, skip it.
+working on 182 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0593_00
+saving to scene0593_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0593_00/color, skip it.
+working on 183 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0593_01
+saving to scene0593_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0593_01/color, skip it.
+working on 184 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0595_00
+saving to scene0595_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0595_00/color, skip it.
+working on 185 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0598_00
+saving to scene0598_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0598_00/color, skip it.
+working on 186 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0598_01
+saving to scene0598_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0598_01/color, skip it.
+working on 187 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0598_02
+saving to scene0598_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0598_02/color, skip it.
+working on 188 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_00
+saving to scene0599_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_00/color, skip it.
+working on 189 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_01
+saving to scene0599_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_01/color, skip it.
+working on 190 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_02
+saving to scene0599_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0599_02/color, skip it.
+working on 191 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0606_00
+saving to scene0606_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0606_00/color, skip it.
+working on 192 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0606_01
+saving to scene0606_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0606_01/color, skip it.
+working on 193 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0606_02
+saving to scene0606_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0606_02/color, skip it.
+working on 194 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0607_00
+saving to scene0607_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0607_00/color, skip it.
+working on 195 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0607_01
+saving to scene0607_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0607_01/color, skip it.
+working on 196 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_00
+saving to scene0608_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_00/color, skip it.
+working on 197 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_01
+saving to scene0608_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_01/color, skip it.
+working on 198 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_02
+saving to scene0608_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0608_02/color, skip it.
+working on 199 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_00
+saving to scene0609_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_00/color, skip it.
+working on 200 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_01
+saving to scene0609_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_01/color, skip it.
+working on 201 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_02
+saving to scene0609_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_02/color, skip it.
+working on 202 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_03
+saving to scene0609_03
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0609_03/color, skip it.
+working on 203 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0616_00
+saving to scene0616_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0616_00/color, skip it.
+working on 204 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0616_01
+saving to scene0616_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0616_01/color, skip it.
+working on 205 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0618_00
+saving to scene0618_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0618_00/color, skip it.
+working on 206 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0621_00
+saving to scene0621_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0621_00/color, skip it.
+working on 207 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0629_00
+saving to scene0629_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0629_00/color, skip it.
+working on 208 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0629_01
+saving to scene0629_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0629_01/color, skip it.
+working on 209 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0629_02
+saving to scene0629_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0629_02/color, skip it.
+working on 210 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0633_00
+saving to scene0633_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0633_00/color, skip it.
+working on 211 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0633_01
+saving to scene0633_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0633_01/color, skip it.
+working on 212 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0643_00
+saving to scene0643_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0643_00/color, skip it.
+working on 213 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0644_00
+saving to scene0644_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0644_00/color, skip it.
+working on 214 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0645_00
+saving to scene0645_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0645_00/color, skip it.
+working on 215 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0645_01
+saving to scene0645_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0645_01/color, skip it.
+working on 216 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0645_02
+saving to scene0645_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0645_02/color, skip it.
+working on 217 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0647_00
+saving to scene0647_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0647_00/color, skip it.
+working on 218 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0647_01
+saving to scene0647_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0647_01/color, skip it.
+working on 219 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0648_00
+saving to scene0648_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0648_00/color, skip it.
+working on 220 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0648_01
+saving to scene0648_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0648_01/color, skip it.
+working on 221 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_00
+saving to scene0651_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_00/color, skip it.
+working on 222 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_01
+saving to scene0651_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_01/color, skip it.
+working on 223 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_02
+saving to scene0651_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0651_02/color, skip it.
+working on 224 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0652_00
+saving to scene0652_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0652_00/color, skip it.
+working on 225 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0653_00
+saving to scene0653_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0653_00/color, skip it.
+working on 226 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0653_01
+saving to scene0653_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0653_01/color, skip it.
+working on 227 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_00
+saving to scene0655_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_00/color, skip it.
+working on 228 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_01
+saving to scene0655_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_01/color, skip it.
+working on 229 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_02
+saving to scene0655_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0655_02/color, skip it.
+working on 230 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0658_00
+saving to scene0658_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0658_00/color, skip it.
+working on 231 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0660_00
+saving to scene0660_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0660_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0660_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 232 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0663_00
+saving to scene0663_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0663_00/color, skip it.
+working on 233 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0663_01
+saving to scene0663_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0663_01/color, skip it.
+working on 234 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0663_02
+saving to scene0663_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0663_02/color, skip it.
+working on 235 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_00
+saving to scene0664_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_00/color, skip it.
+working on 236 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_01
+saving to scene0664_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 237 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_02
+saving to scene0664_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0664_02/color, skip it.
+working on 238 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0670_00
+saving to scene0670_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0670_00/color, skip it.
+working on 239 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0670_01
+saving to scene0670_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0670_01/color, skip it.
+working on 240 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0671_00
+saving to scene0671_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0671_00/color, skip it.
+working on 241 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0671_01
+saving to scene0671_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0671_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0671_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 242 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0678_00
+saving to scene0678_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0678_00/color, skip it.
+working on 243 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0678_01
+saving to scene0678_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0678_01/color, skip it.
+working on 244 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0678_02
+saving to scene0678_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0678_02/color, skip it.
+working on 245 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_00
+saving to scene0684_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 246 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_01
+saving to scene0684_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0684_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 247 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0685_00
+saving to scene0685_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0685_00/color, skip it.
+working on 248 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0685_01
+saving to scene0685_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0685_01/color, skip it.
+working on 249 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0685_02
+saving to scene0685_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0685_02/color, skip it.
+working on 250 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_00
+saving to scene0686_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 251 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_01
+saving to scene0686_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 252 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_02
+saving to scene0686_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0686_02/color, skip it.
+working on 253 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0689_00
+saving to scene0689_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0689_00/color, skip it.
+working on 254 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0690_00
+saving to scene0690_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0690_00/color, skip it.
+working on 255 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0690_01
+saving to scene0690_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0690_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0690_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 256 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_00
+saving to scene0693_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 257 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_01
+saving to scene0693_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_01/color, skip it.
+working on 258 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_02
+saving to scene0693_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0693_02/color, skip it.
+working on 259 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_00
+saving to scene0695_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_00/color, skip it.
+working on 260 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_01
+saving to scene0695_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 261 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_02
+saving to scene0695_02
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_02/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_02/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 262 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_03
+saving to scene0695_03
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_03/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0695_03/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 263 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_00
+saving to scene0696_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_00/color, skip it.
+working on 264 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_01
+saving to scene0696_01
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_01/color, skip it.
+working on 265 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_02
+saving to scene0696_02
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_02/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0696_02/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 266 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_00
+saving to scene0697_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 267 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_01
+saving to scene0697_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 268 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_02
+saving to scene0697_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_02/color, skip it.
+working on 269 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_03
+saving to scene0697_03
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0697_03/color, skip it.
+working on 270 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0699_00
+saving to scene0699_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0699_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0699_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 271 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0700_00
+saving to scene0700_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0700_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0700_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 272 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0700_01
+saving to scene0700_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0700_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0700_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 273 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0700_02
+saving to scene0700_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0700_02/color, skip it.
+working on 274 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_00
+saving to scene0701_00
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_00/color, skip it.
+working on 275 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_01
+saving to scene0701_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 276 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_02
+saving to scene0701_02
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_02/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0701_02/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 277 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_00
+saving to scene0702_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 278 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_01
+saving to scene0702_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 279 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_02
+saving to scene0702_02
+Using PyTorch large kernel dw conv impl
+We are done with images at /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0702_02/color, skip it.
+working on 280 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0704_00
+saving to scene0704_00
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0704_00/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0704_00/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
+working on 281 : /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0704_01
+saving to scene0704_01
+Using PyTorch large kernel dw conv impl
+Configuration: {'model': './saves/DEVA-propagation.pth', 'gsam': False, 'output': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0704_01/results/deva_mask2former', 'save_all': False, 'amp': True, 'key_dim': 64, 'value_dim': 512, 'pix_feat_dim': 512, 'disable_long_term': False, 'max_mid_term_frames': 10, 'min_mid_term_frames': 5, 'max_long_term_elements': 10000, 'num_prototypes': 128, 'top_k': 30, 'mem_every': 5, 'chunk_size': 4, 'size': -1, 'img_path': '/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scene0704_01/color', 'detection_every': 5, 'num_voting_frames': 3, 'dataset': 'vipseg', 'max_missed_detection_count': 1, 'temporal_setting': 'semionline', 'max_num_objects': -1, 'custom_seg_threshold': 0.7, 'config_file': '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml', 'opts': ['MODEL.WEIGHTS', '/projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth'], 'custom_mask_filter_threshold': 50, 'enable_long_term': True, 'enable_long_term_count_usage': True}
+Restricted license - for non-production use only - expires 2024-10-28
