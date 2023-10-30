@@ -24,7 +24,7 @@ find "$parent_directory" -mindepth 1 -maxdepth 1 -type d | sort | while read -r 
     echo "working on $counter : $directory"
     fbname=$(basename "$directory")
     echo "saving to $fbname"
-    python3 demo/demo_with_mask2former.py --chunk_size 4 --img_path "$directory/color" --amp --temporal_setting semionline --max_missed_detection_count 1 --size -1 --output "$directory/results/deva_mask2former" --config-file /projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml --opts MODEL.WEIGHTS /projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth
+    python3 demo/demo_with_mask2former.py --chunk_size 4 --img_path "$directory/color" --amp --temporal_setting semionline --max_missed_detection_count 2 --size -1 --output "$directory/results/deva_mask2former_test" --config-file /projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml --opts MODEL.WEIGHTS /projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth
     fi
     ((counter++))
 done

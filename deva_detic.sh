@@ -24,7 +24,7 @@ find "$parent_directory" -mindepth 1 -maxdepth 1 -type d | sort | while read -r 
     echo "working on $directory"
     fbname=$(basename "$directory")
     echo "saving to $fbname"
-    python3 demo/demo_with_detic.py --chunk_size 4 --img_path "$directory/color" --amp --temporal_setting semionline --max_missed_detection_count 1 --size -1 --output "$directory/results/deva_detic" --custom_seg_threshold 0.5 --confidence-threshold 0.5 --opts MODEL.WEIGHTS "Detic/models/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.pth"
+    python3 demo/demo_with_detic.py --chunk_size 4 --img_path "$directory/color" --amp --temporal_setting semionline --max_missed_detection_count 2 --size -1 --output "$directory/results/deva_detic_test" --custom_seg_threshold 0.5 --confidence-threshold 0.5 --opts MODEL.WEIGHTS "Detic/models/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.pth"
     # python3 demo/demo_with_detic.py --chunk_size 4 --img_path "$directory/color" --amp --temporal_setting semionline --max_missed_detection_count 1 --size -1 --output "$directory/results/deva_mask2former" --config-file /projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/configs/entityv2/entity_segmentation/mask2former_swin_large_3x.yaml --opts MODEL.WEIGHTS /projects/perception/personals/david/Tracking-Anything-with-DEVA/detectron2/projects/CropFormer/checkpoints/Mask2Former_swin_large_w7_3x_dd4543.pth
     fi
     ((counter++))

@@ -20,9 +20,9 @@ class ObjectInfo:
         self.category_ids = [category_id]
         self.scores = [score]
         self.isthing = isthing
-        self.hidden_states_clip = np.array(hidden_state_clip)
+        self.hidden_states_clip = np.array([hidden_state_clip])
         if hidden_state_seg is not None:
-            self.hidden_states_seg = np.array(hidden_state_seg)
+            self.hidden_states_seg = np.array([hidden_state_seg])
         else:
             self.hidden_states_seg = None
         self.poke_count = 0  # number of detections since last this object was last seen
@@ -34,10 +34,12 @@ class ObjectInfo:
         self.poke_count = 0
 
     def merge(self, other) -> None:
-
-        self.hidden_states_clip = (self.hidden_states_clip * len(self.scores) + other.hidden_states_clip * len(other.scores)) / (len(self.scores) + len(other.scores))
+        
+        self.hidden_states_clip = np.vstack((self.hidden_states_clip, other.hidden_states_clip))
+        # self.hidden_states_clip = (self.hidden_states_clip * len(self.scores) + other.hidden_states_clip * len(other.scores)) / (len(self.scores) + len(other.scores))
         if self.hidden_states_seg is not None:
-            self.hidden_states_seg = (self.hidden_states_seg * len(self.scores) + other.hidden_state_seg * len(other.scores)) / (len(self.scores) + len(other.scores))
+            self.hidden_states_seg = np.vstack((self.hidden_states_seg, other.hidden_states_seg))
+            # self.hidden_states_seg = (self.hidden_states_seg * len(self.scores) + other.hidden_states_seg * len(other.scores)) / (len(self.scores) + len(other.scores))
         self.category_ids.extend(other.category_ids)
         self.scores.extend(other.scores)
         # self.hidden_states_seg.extend(other.hidden_states_seg)

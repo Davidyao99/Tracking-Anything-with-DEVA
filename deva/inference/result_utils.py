@@ -66,7 +66,7 @@ class ResultSaver:
             self.all_annotations = []
             self.video_json = {'annotations': self.all_annotations}
             self.json_style = 'vipseg'
-            self.visualize = False
+            self.visualize = True
             self.visualize_postfix = 'Visualizations'
             self.output_postfix = 'Annotations'
         elif self.dataset == 'gradio':
