@@ -53,11 +53,11 @@ class ObjectInfo:
             return int(stats.mode(self.category_ids, keepdims=False)[0])
 
     def vote_score(self) -> Optional[float]:
-        scores = [c for c in self.scores if c is not None]
+        scores = [float(c) for c in self.scores if c is not None]
         if len(scores) == 0:
             return None
         else:
-            return float(np.mean(scores))
+            return scores
 
     def vote_hidden_states_seg(self) -> Optional[np.ndarray]:
         if self.hidden_states_seg is None:

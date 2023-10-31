@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH --job-name=deva_detic_test                 # sets the job name
-#SBATCH --output=deva_detic_test_output.txt 
-#SBATCH --error=deva_detic_test_error.txt                             # indicates a file to redirect STDERR to; %j is the jobid. Must be set to a file instead of a directory or else submission will fail.
+#SBATCH --job-name=deva_mask2former_test                 # sets the job name
+#SBATCH --output=deva_mask2former_test_output.txt 
+#SBATCH --error=deva_mask2former_test_error.txt                             # indicates a file to redirect STDERR to; %j is the jobid. Must be set to a file instead of a directory or else submission will fail.
 #SBATCH --time=70:00:00                                         # how long you think your job will take to complete; format=hh:mm:ss
 #SBATCH --partition=shenlong2                                     # set QOS, this will determine what resources can be requested
 #SBATCH --nodes=1                                               # number of nodes to allocate for your job
@@ -17,7 +17,7 @@ conda activate deva_custom
 module load cuda/.11.6
 
 # bash deva_grounding_sam.sh /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/ 3 0
-bash deva_detic.sh /projects/perception/personals/david/OVIR-3D_V1/ScanNet_val_split 1 0
+bash deva_mask2former.sh /projects/perception/personals/david/OVIR-3D_V1/ScanNet_val_split 1 0
 # bash deva_mask2former.sh /projects/perception/personals/david/OVIR-3D_V1/ScanNet_val_split 1 0
 # bash deva_mask2former.sh /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/ 1 0
 # bash deva_detic.sh /projects/perception/personals/david/OVIR-3D_V1/ScanNet_val_split 3 1

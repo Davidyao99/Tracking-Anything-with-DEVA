@@ -58,9 +58,9 @@ if __name__ == '__main__':
     out_path = cfg['output']
 
     test_done_path = os.path.join(out_path, "done.txt")
-    if os.path.exists(test_done_path):
-        print(f"We are done with images at {cfg['img_path']}, skip it.")
-        exit()
+    # if os.path.exists(test_done_path):
+    #     print(f"We are done with images at {cfg['img_path']}, skip it.")
+    #     exit()
 
     # Start eval
     vid_length = len(loader)
