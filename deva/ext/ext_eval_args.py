@@ -97,7 +97,7 @@ def add_custom_default_args(parser):
                         default=-1,
                         type=int,
                         help='Max. num of objects to keep in memory. -1 for no limit')
-    parser.add_argument("--custom_seg_threshold", type=float, default=0.7)
+    parser.add_argument("--custom_seg_threshold", type=float, default=0.4)
 
     return parser
 

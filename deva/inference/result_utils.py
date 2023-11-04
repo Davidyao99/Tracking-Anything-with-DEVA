@@ -252,9 +252,9 @@ def save_result(queue: Queue):
                     all_scores = []
                     for seg in segments_info:
                         all_masks.append(mask == seg['id'])
-                        labels.append(f'{prompts[seg["category_id"]]} {seg["score"]:.2f}')
+                        labels.append(f'{prompts[seg["category_id"]]} {seg["score"][-1]:.2f}')
                         all_cat_ids.append(seg['category_id'])
-                        all_scores.append(seg['score'])
+                        all_scores.append(seg['score'][-1])
                     if len(all_masks) > 0:
                         all_masks = torch.stack(all_masks, dim=0)
                         xyxy = torchvision.ops.masks_to_boxes(all_masks)
