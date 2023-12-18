@@ -32,6 +32,7 @@ parser = ArgumentParser()
 parser.add_argument('--img_path', default='./example/vipseg')
 parser.add_argument('--mask_path')
 parser.add_argument('--workdir')
+parser.add_argument('--output_dir', type=str)
 parser.add_argument('--every', type=int)
 parser.add_argument('--mod', type=int)
 parser.add_argument('--json_path', default=None)
@@ -151,14 +152,17 @@ for vid_reader in pbar:
         config['enable_long_term']
         and (vid_length / (config['max_mid_term_frames'] - config['min_mid_term_frames']) *
              config['num_prototypes']) >= config['max_long_term_elements'])
+
+    out_path = os.path.join(args.workdir, vid_name, args.output_dir)
+    os.makedirs(out_path, exist_ok=True)
+
+    if os.path.exists(os.path.join(out_path, "done.txt")):
+        print(f"We are done with images at {vid_name}, skip it.")
+        continue
     
-    with open(f"{os.path.join(args.workdir, vid_name)}/args.txt", 'w') as f:
+    with open(os.path.join(args.workdir, vid_name, args.output_dir, "args.txt"), 'w') as f:
         json.dump(args.__dict__, f, indent=2)
     
-    out_path = os.path.join(args.workdir, vid_name, "deva_custom_detic")
-    if not os.path.exists(out_path):
-        os.makedirs(out_path)
-
     try:
         processor = DEVAInferenceCore(network, config=config)
         result_saver = ResultSaver(out_path,
@@ -340,6 +344,9 @@ for vid_reader in pbar:
 
             with open(path.join(out_path, 'tracklets.json'), 'w') as f:
                 json.dump(obj_summary, f, indent=2)  # prettier json
+
+        with open(os.path.join(out_path, "done.txt"), 'w') as f:
+            pass
 
     except Exception as e:
         print(f'Runtime error at {vid_name}')

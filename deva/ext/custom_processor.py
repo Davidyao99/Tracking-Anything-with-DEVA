@@ -5,6 +5,8 @@ import cv2
 import torch
 import numpy as np
 
+import os
+
 from deva.inference.object_info import ObjectInfo
 from deva.inference.inference_core import DEVAInferenceCore
 from deva.inference.frame_utils import FrameInfo
@@ -36,7 +38,7 @@ def visualize_mask(mask):
     return mask_vis
 
 @torch.inference_mode()
-def process_frame_custom(deva, seg_model, clip_model, clip_preprocess, frame_path, result_saver, ti, image_np):
+def process_frame_custom(deva, seg_model, frame_path, result_saver, ti, image_np):
 
     if image_np is None:
         image_np = cv2.imread(frame_path)
@@ -56,12 +58,17 @@ def process_frame_custom(deva, seg_model, clip_model, clip_preprocess, frame_pat
 
     if cfg['temporal_setting'] == 'semionline':
         if ti + cfg['num_voting_frames'] > deva.next_voting_frame:
-            mask, segments_info = make_segmentation_with_custom(cfg, image_np, seg_model, clip_model, 
-                                                            clip_preprocess)
+            mask, segments_info = make_segmentation_with_custom(cfg, image_np, seg_model)
             
-            # custom_mask = mask.clone().detach().cpu().numpy()
-            # vis_mask = visualize_mask(custom_mask)
-            # cv2.imwrite(f"/projects/perception/personals/david/OVIR-3D_V1/ScanNet/scene0011_01/deva_custom_detic/entityseg/entity_seg_{ti}.png", vis_mask)
+            custom_mask = mask.clone().detach().cpu().numpy()
+            vis_mask = visualize_mask(custom_mask)
+            vis_mask = cv2.addWeighted(image_np, 0.5, vis_mask, 0.5, 0)
+            custom_mask_path = os.path.join(cfg['output'], 'custom_mask', f"entity_seg_{ti}.png")
+
+            if not os.path.exists(custom_mask_path):
+                os.makedirs(os.path.dirname(custom_mask_path), exist_ok=True)
+
+            cv2.imwrite(custom_mask_path, vis_mask)
 
             frame_info.mask = mask
             frame_info.segments_info = segments_info
@@ -113,8 +120,7 @@ def process_frame_custom(deva, seg_model, clip_model, clip_preprocess, frame_pat
     elif cfg['temporal_setting'] == 'online':
         if ti % cfg['detection_every'] == 0:
             # incorporate new detections
-            mask, segments_info = make_segmentation_with_custom(cfg, image_np, seg_model, clip_model, 
-                                                            clip_preprocess)
+            mask, segments_info = make_segmentation_with_custom(cfg, image_np, seg_model)
             frame_info.segments_info = segments_info
             prob = deva.incorporate_detection(image, mask, segments_info)
         else:

@@ -11,30 +11,37 @@ import torchvision
 from deva.inference.object_info import ObjectInfo
 from PIL import Image
 
-def get_hidden_states_clip(clip_model, clip_preprocess, image, boxes):
+# def get_hidden_states_clip(clip_model, clip_preprocess, image, boxes):
 
-    crops = []
-    h,w = image.shape[:2]
-    for box in boxes:
-        crop = image[max(0,int(box[1])):min(h,int(box[3])), max(0,int(box[0])): min(w,int(box[2]))]
-        crop_image = Image.fromarray(crop)
-        crop = clip_preprocess(crop_image)
-        crops.append(crop)
+#     crops = [clip_preprocess(Image.fromarray(image))]
+#     h,w = image.shape[:2]
+#     for box in boxes:
+#         crop = image[max(0,int(box[1])):min(h,int(box[3])), max(0,int(box[0])): min(w,int(box[2]))]
+#         crop_image = Image.fromarray(crop)
+#         crop = clip_preprocess(crop_image)
+#         crops.append(crop)
 
-    if len(crops) == 0:
-        return []
+#     if len(crops) == 0:
+#         return []
 
-    crops_torch = torch.from_numpy(np.stack(crops)).to('cuda')
+#     crops_torch = torch.from_numpy(np.stack(crops)).to('cuda')
 
-    with torch.no_grad():
-        logits = clip_model.encode_image(crops_torch)
-        logits_cpu = logits.cpu().numpy()
+#     with torch.no_grad():
+#         logits = clip_model.encode_image(crops_torch)
 
-    torch.cuda.empty_cache()
+#     global_feat = torch.nn.functional.normalize(logits[0][None,:], dim=-1)
+#     crop_feats = torch.nn.functional.normalize(logits[1:], dim=-1)
 
-    return logits_cpu
+#     sim = (global_feat @ crop_feats.T)
 
-def make_segmentation_with_custom(cfg, image, seg_model, clip_model, clip_preprocess):
+#     softmax_scores = torch.nn.functional.softmax(sim, dim=1).T
+#     weighted_clip = softmax_scores * global_feat + (1 - softmax_scores) * crop_feats
+
+#     torch.cuda.empty_cache()
+
+#     return weighted_clip.cpu().numpy()
+
+def make_segmentation_with_custom(cfg, image, seg_model):
 
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
     vis_output = None
@@ -72,7 +79,7 @@ def make_segmentation_with_custom(cfg, image, seg_model, clip_model, clip_prepro
             y2 += 1
         boxes.append((x1, y1, x2, y2))
 
-    hidden_states = get_hidden_states_clip(clip_model, clip_preprocess, image, boxes)
+    # hidden_states = get_hidden_states_clip(clip_model, clip_preprocess, image, boxes)
 
     output_mask = torch.zeros((m_H, m_W), dtype=torch.int64, device='cuda')
 
@@ -80,7 +87,7 @@ def make_segmentation_with_custom(cfg, image, seg_model, clip_model, clip_prepro
     segments_info = []
 
     for i in range(len(selected_masks)):
-        segments_info.append(ObjectInfo(id=curr_id, category_id=0, score=selected_scores[i].item(),hidden_state_clip=hidden_states[i].tolist()))
+        segments_info.append(ObjectInfo(id=curr_id, category_id=0, score=selected_scores[i].item()))
         output_mask[selected_masks[i] > 0] = curr_id
         curr_id += 1
 

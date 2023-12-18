@@ -61,7 +61,7 @@ if __name__ == '__main__':
 
     predictor = DefaultPredictor(cfg_predictor)
 
-    clip_model, clip_preprocess = clip.load("ViT-L/14", device='cuda', download_root="/home/dyyao2/scratch/")
+    # clip_model, clip_preprocess = clip.load("ViT-L/14", device='cuda', download_root="/home/dyyao2/scratch/")
 
     if not os.path.exists(args.output):
         os.makedirs(args.output)
@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
     with torch.cuda.amp.autocast(enabled=cfg['amp']):
         for ti, (frame, im_path) in enumerate(tqdm(loader)):
-            process_frame(deva, predictor, clip_model, clip_preprocess, im_path, result_saver, ti, image_np=frame)
+            process_frame(deva, predictor, im_path, result_saver, ti, image_np=frame)
             # process_frame(deva, gd_model, sam_model, im_path, result_saver, ti, image_np=frame)
         flush_buffer(deva, result_saver)
     result_saver.end()

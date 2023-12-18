@@ -14,6 +14,8 @@ import copy
 import numpy as np
 import supervision as sv
 
+import os
+
 from deva.utils.pano_utils import ID2RGBConverter
 from deva.inference.object_manager import ObjectManager
 from deva.inference.object_info import ObjectInfo
@@ -138,7 +140,6 @@ class ResultArgs:
     obj_to_tmp_id: Dict[ObjectInfo, int]
     segments_info: List[Dict]
 
-
 def save_result(queue: Queue):
     while True:
         args: ResultArgs = queue.get()
@@ -244,29 +245,29 @@ def save_result(queue: Queue):
                 alpha = alpha[:, :, None]
                 blend = (image_np * alpha + rgb_mask * (1 - alpha)).astype(np.uint8)
 
-                if prompts is not None: # remove box
-                    # draw bounding boxes for the prompts
-                    all_masks = []
-                    labels = []
-                    all_cat_ids = []
-                    all_scores = []
-                    for seg in segments_info:
-                        all_masks.append(mask == seg['id'])
-                        labels.append(f'{prompts[seg["category_id"]]} {seg["score"][-1]:.2f}')
-                        all_cat_ids.append(seg['category_id'])
-                        all_scores.append(seg['score'][-1])
-                    if len(all_masks) > 0:
-                        all_masks = torch.stack(all_masks, dim=0)
-                        xyxy = torchvision.ops.masks_to_boxes(all_masks)
-                        xyxy = xyxy.numpy()
+                # if prompts is not None: # remove box
+                #     # draw bounding boxes for the prompts
+                #     all_masks = []
+                #     labels = []
+                #     all_cat_ids = []
+                #     all_scores = []
+                #     for seg in segments_info:
+                #         all_masks.append(mask == seg['id'])
+                #         labels.append(f'{prompts[seg["category_id"]]} {seg["score"][-1]:.2f}')
+                #         all_cat_ids.append(seg['category_id'])
+                #         all_scores.append(seg['score'][-1])
+                #     if len(all_masks) > 0:
+                #         all_masks = torch.stack(all_masks, dim=0)
+                #         xyxy = torchvision.ops.masks_to_boxes(all_masks)
+                #         xyxy = xyxy.numpy()
 
-                        detections = sv.Detections(xyxy,
-                                                   confidence=np.array(all_scores),
-                                                   class_id=np.array(all_cat_ids))
-                        annotator = sv.BoxAnnotator()
-                        blend = annotator.annotate(scene=blend,
-                                                   detections=detections,
-                                                   labels=labels)
+                #         detections = sv.Detections(xyxy,
+                #                                    confidence=np.array(all_scores),
+                #                                    class_id=np.array(all_cat_ids))
+                #         annotator = sv.BoxAnnotator()
+                #         blend = annotator.annotate(scene=blend,
+                #                                    detections=detections,
+                #                                    labels=labels)
 
                 if saver.dataset != 'gradio':
                     # find a place to save the visualization
