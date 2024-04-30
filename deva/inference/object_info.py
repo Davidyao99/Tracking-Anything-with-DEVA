@@ -34,8 +34,17 @@ class ObjectInfo:
         self.labels.extend(other.labels)
         self.scores.extend(other.scores)
 
+<<<<<<< HEAD
     def vote_labels(self) -> Optional[str]:
         return self.labels
+=======
+    def vote_category_id(self) -> Optional[int]:
+        category_ids = [c for c in self.category_ids if c is not None]
+        if len(category_ids) == 0:
+            return None
+        else:
+            return int(stats.mode(category_ids, keepdims=False)[0])
+>>>>>>> 04a7eff756f646e7f187ea449b0866d259a65cdf
 
     def vote_score(self) -> Optional[float]:
         scores = [float(c) for c in self.scores if c is not None]

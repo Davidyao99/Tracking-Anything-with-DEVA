@@ -14,6 +14,8 @@ ICCV 2023
 1. Provide long-term, open-vocabulary video segmentation with text-prompts out-of-the-box.
 2. Fairly easy to **integrate your own image model**! Wouldn't you or your reviewers be interested in seeing examples where your image model also works well on videos :smirk:? No finetuning is needed!
 
+***Note (Mar 6 2024):*** We have fixed a major bug (introduced in the last update) that prevented the deletion of unmatched segments in text/eval_with_detections modes. This should greatly reduce the amount of accumulated noisy detection/false positives, especially for long videos. See [#64](https://github.com/hkchengrex/Tracking-Anything-with-DEVA/issues/64).
+
 ***Note (Sep 12 2023):*** We have improved automatic video segmentation by not querying the points in segmented regions. We correspondingly increased the number of query points per side to 64 and deprecated the "engulf" mode. The old code can be found in the "legacy_engulf" branch. The new code should run a lot faster and capture smaller objects. The text-prompted mode is still recommended for better results.
 
 ***Note (Sep 11 2023):*** We have removed the "pluralize" option as it works weirdly sometimes with GroundingDINO. If needed, please pluralize the prompt yourself.
@@ -62,7 +64,7 @@ Source: https://youtu.be/FQQaSyH9hZI
 Tested on Ubuntu only. For installation on Windows WSL2, refer to https://github.com/hkchengrex/Tracking-Anything-with-DEVA/issues/20 (thanks @21pl).
 
 **Prerequisite:**
-- Python 3.7+
+- Python 3.9+
 - PyTorch 1.12+ and corresponding torchvision
 
 **Clone our repository:**
@@ -133,6 +135,12 @@ python demo/demo_automatic.py --chunk_size 4 \
 1. [Running DEVA with your own detection model.](docs/CUSTOM.md)
 2. [Running DEVA with detections to reproduce the benchmark results.](docs/EVALUATION.md)
 3. [Training the DEVA model.](docs/TRAINING.md)
+
+## Limitations
+
+- On closed-set data, DEVA most likely does not work as well as end-to-end approaches. Joint training is (for now) still a better idea when you have enough target data.
+- Positive detections are amplified temporally due to propagation. Having a detector with a lower false positive rate (i.e., a higher threshold) helps.
+- If new objects are coming in and out all the time (e.g., in driving scenes), we will keep a lot of objects in the memory bank which unfortunately increases the false positive rate. Decreasing `max_missed_detection_count` might help since we delete objects from memory more eagerly.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/aouI1WU.png">
