@@ -1,15 +1,15 @@
 #!/bin/bash
 
-#SBATCH --job-name=deva_mask2former_test_2                 # sets the job name
-#SBATCH --output=deva_mask2former_test_2_output.txt 
-#SBATCH --error=deva_mask2former_test_2_error.txt                             # indicates a file to redirect STDERR to; %j is the jobid. Must be set to a file instead of a directory or else submission will fail.
+#SBATCH --job-name=deva_adt_0                 # sets the job name
+#SBATCH --output=slurm_output/deva_adt_0_output.txt 
+#SBATCH --error=slurm_output/deva_adt_0_error.txt                             # indicates a file to redirect STDERR to; %j is the jobid. Must be set to a file instead of a directory or else submission will fail.
 #SBATCH --time=70:00:00                                         # how long you think your job will take to complete; format=hh:mm:ss
 #SBATCH --partition=shenlong2                                     # set QOS, this will determine what resources can be requested
 #SBATCH --nodes=1                                               # number of nodes to allocate for your job
 #SBATCH --ntasks-per-node=1                                              # request 4 cpu cores be reserved for your node total
-#SBATCH --mem=64gb                                               # memory required by job; if unit is not specified MB will be assumed
+#SBATCH --mem=32gb                                               # memory required by job; if unit is not specified MB will be assumed
 #SBATCH --gres=gpu:1                                            # specify gpu usage, make sure your program is optimized to use this
-#SBATCH --cpus-per-task=3                                      # number of cpu-cores per task
+#SBATCH --cpus-per-task=2                                      # number of cpu-cores per task
 
 # module load anaconda/2022-May/3
 eval "$(conda shell.bash hook)"
@@ -31,6 +31,9 @@ module load cuda/.11.6
 # bash deva_scannet.sh /projects/perception/personals/david/OVIR-3D/ScanNet 50 0 
 # python3 make_video.py
 
-python evaluation/eval_with_detections.py --every 3 --mod 2  --output_dir deva_entity --workdir /projects/perception/datasets/replica/scans --max_missed_detection_count 2  --dataset demo --temporal_setting semionline --chunk_size 4
+# python evaluation/eval_with_detections.py --every 1 --mod 0 --mask_dir ram_gsam_window  --output_dir deva_ram_gsam_window --workdir /projects/perception/datasets/4dunderstanding/data/TUM_rgbd_dataset_freiburg3_walking_halfsphere_15fps --max_missed_detection_count 5  --dataset demo --temporal_setting semionline --chunk_size 4
 
 # python3 projects/EntitySegRLE/demo_result_and_vis.py --config-file projects/EntitySeg/configs/entity_swin_tiny_3x.yaml --input projects/EntitySeg/images/0000-color.jpg --output projects/EntitySeg/output MODEL.WEIGHTS projects/EntitySeg/checkpoints/swin_t_1x.pth MODEL.CONDINST.MASK_BRANCH.USE_MASK_RESCORE "True"
+
+
+python evaluation/eval_with_detections.py --every 1 --mod 0 --mask_dir ram_gsam_window  --output_dir deva_ram_gsam_window --workdir /projects/perception/datasets/4dunderstanding/data/TUM_test2 --max_missed_detection_count 5  --dataset demo --temporal_setting semionline --chunk_size 4

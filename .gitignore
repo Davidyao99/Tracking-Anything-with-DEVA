@@ -1,2 +1,4 @@
 *.pyc
 *.txt
+saves/*
+slurm_output/*

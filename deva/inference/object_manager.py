@@ -148,7 +148,7 @@ class ObjectManager:
         segments_info = []
         for obj in self.obj_to_tmp_id:
             segments_info.append({
-                'category_id': obj.vote_category_id(),
+                'label': obj.vote_labels(),
                 'id': int(obj.id),
                 'score': obj.vote_score(),
             })
@@ -159,10 +159,8 @@ class ObjectManager:
         for _, obj in self.obj_id_to_obj_hist.items():
             assert int(obj.id) not in segments_info
             segments_info[int(obj.id)] = {
-                'category_id': obj.vote_category_id(),
+                'label': obj.vote_labels(),
                 'score': obj.vote_score(),
-                'hidden_state_seg': obj.vote_hidden_states_seg(),
-                'hidden_state_clip': obj.vote_hidden_states_clip(),
             }
         return segments_info
 

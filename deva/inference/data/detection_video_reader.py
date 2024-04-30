@@ -49,9 +49,8 @@ class DetectionVideoReader(Dataset):
             self.frames = self.frames[:end]
         if reverse:
             self.frames = reversed(self.frames)
-
-        self.palette = Image.open(path.join(mask_dir, self.frames[0].replace('.jpg',
-                                                                             '.png'))).getpalette()
+        
+        self.palette = Image.open(path.join(mask_dir, self.frames[0].replace('.jpg', '.png'))).getpalette()
         self.first_gt_path = path.join(self.mask_dir, self.frames[0].replace('.jpg', '.png'))
 
         if size < 0:

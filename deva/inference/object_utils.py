@@ -17,11 +17,7 @@ def convert_json_dict_to_objects_info(mask: torch.Tensor,
         output = [
             ObjectInfo(
                 id=segment['id'],
-                category_id=segment.get('category_id'),
-                hidden_state_seg=segment.get('hidden_state_seg'),
-                hidden_state_clip=segment.get('hidden_state_clip'),
-                isthing=vipseg_cat_to_isthing[segment.get('category_id')]
-                if dataset == 'vipseg' else None,
+                label=str(segment['label']),
                 score=float(segment['score']) if
                 ((dataset == 'burst' or dataset == 'demo') and 'score' in segment) else None)
             for segment in segments_info

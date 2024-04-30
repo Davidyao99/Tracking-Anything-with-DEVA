@@ -31,6 +31,7 @@ Arguments loading
 parser = ArgumentParser()
 parser.add_argument('--img_path', default='./example/vipseg')
 parser.add_argument('--mask_path')
+parser.add_argument('--mask_dir')
 parser.add_argument('--workdir')
 parser.add_argument('--output_dir', type=str)
 parser.add_argument('--every', type=int)
@@ -92,9 +93,12 @@ if args.json_path is None and args.mask_path is not None:
 # try to find the real mask path if it is hidden behind pan_pred
 # if path.exists(path.join(args.mask_path, 'pan_pred')):
 #     args.mask_path = path.join(args.mask_path, 'pan_pred')
+vid_list = sorted(os.listdir(args.workdir))
+# vid_list=[""]
+
 if is_vipseg or is_davis or is_demo:
     # meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
-    meta_dataset = VIPSegDetectionTestDataset(args.workdir, args.size)
+    meta_dataset = VIPSegDetectionTestDataset(args.workdir, args.mask_dir, vid_list, args.size)
 elif is_burst:
     meta_dataset = BURSTDetectionTestDataset(args.img_path,
                                              args.mask_path,
@@ -153,14 +157,15 @@ for vid_reader in pbar:
         and (vid_length / (config['max_mid_term_frames'] - config['min_mid_term_frames']) *
              config['num_prototypes']) >= config['max_long_term_elements'])
 
+    # out_path = os.path.join(args.workdir, "features", vid_name, args.output_dir)
     out_path = os.path.join(args.workdir, vid_name, args.output_dir)
     os.makedirs(out_path, exist_ok=True)
 
-    if os.path.exists(os.path.join(out_path, "done.txt")):
-        print(f"We are done with images at {vid_name}, skip it.")
-        continue
+    # if os.path.exists(os.path.join(out_path, "done.txt")):
+    #     print(f"We are done with images at {vid_name}, skip it.")
+    #     continue
     
-    with open(os.path.join(args.workdir, vid_name, args.output_dir, "args.txt"), 'w') as f:
+    with open(os.path.join(out_path, "args.txt"), 'w') as f:
         json.dump(args.__dict__, f, indent=2)
     
     try:
@@ -172,6 +177,7 @@ for vid_reader in pbar:
                                    object_manager=processor.object_manager)
 
         for ti, data in enumerate(loader):
+
             print(f"Working on frame {ti}/{len(loader)} for {vid_name}", end='\r', flush=True)
             with torch.cuda.amp.autocast(enabled=args.amp):
                 image = data['rgb'].cuda()[0]
@@ -345,8 +351,8 @@ for vid_reader in pbar:
             with open(path.join(out_path, 'tracklets.json'), 'w') as f:
                 json.dump(obj_summary, f, indent=2)  # prettier json
 
-        with open(os.path.join(out_path, "done.txt"), 'w') as f:
-            pass
+        # with open(os.path.join(out_path, "done.txt"), 'w') as f:
+        #     pass
 
     except Exception as e:
         print(f'Runtime error at {vid_name}')
