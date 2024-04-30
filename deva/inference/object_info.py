@@ -10,15 +10,11 @@ class ObjectInfo:
     """
     def __init__(self,
                  id: int,
-                 label: str = None,
+                 category_id: Optional[int] = None,
                  isthing: Optional[bool] = None,
-                 score: Optional[float] = None,):
-                
+                 score: Optional[float] = None):
         self.id = id
-        if label is not None:
-            self.labels = [label]
-        else:
-            self.labels = []
+        self.category_ids = [category_id]
         self.scores = [score]
         self.isthing = isthing
         self.poke_count = 0  # number of detections since last this object was last seen
@@ -30,35 +26,29 @@ class ObjectInfo:
         self.poke_count = 0
 
     def merge(self, other) -> None:
-        
-        self.labels.extend(other.labels)
+        self.category_ids.extend(other.category_ids)
         self.scores.extend(other.scores)
 
-<<<<<<< HEAD
-    def vote_labels(self) -> Optional[str]:
-        return self.labels
-=======
     def vote_category_id(self) -> Optional[int]:
         category_ids = [c for c in self.category_ids if c is not None]
         if len(category_ids) == 0:
             return None
         else:
             return int(stats.mode(category_ids, keepdims=False)[0])
->>>>>>> 04a7eff756f646e7f187ea449b0866d259a65cdf
 
     def vote_score(self) -> Optional[float]:
-        scores = [float(c) for c in self.scores if c is not None]
+        scores = [c for c in self.scores if c is not None]
         if len(scores) == 0:
             return None
         else:
-            return scores
+            return float(np.mean(scores))
 
     def get_rgb(self) -> np.ndarray:
         # this is valid for panoptic segmentation-style id only (0~255**3)
         return id_to_rgb(self.id)
 
     def copy_meta_info(self, other) -> None:
-        self.labels = other.labels
+        self.category_ids = other.category_ids
         self.scores = other.scores
         self.isthing = other.isthing
 
@@ -69,4 +59,4 @@ class ObjectInfo:
         return self.id == other.id
 
     def __repr__(self):
-        return f'(ID: {self.id}, labels: {self.labels}, isthing: {self.isthing}, score: {self.scores})'
+        return f'(ID: {self.id}, cat: {self.category_ids}, isthing: {self.isthing}, score: {self.scores})'
