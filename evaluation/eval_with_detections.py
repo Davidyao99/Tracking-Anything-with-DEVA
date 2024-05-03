@@ -90,26 +90,26 @@ def main():
         if path.exists(path.join(args.mask_path, 'pred.json')):
             args.json_path = path.join(args.mask_path, 'pred.json')
 
-#     out_path = args.output
+    #     out_path = args.output
 
-# try to find the real mask path if it is hidden behind pan_pred
-# if path.exists(path.join(args.mask_path, 'pan_pred')):
-#     args.mask_path = path.join(args.mask_path, 'pan_pred')
-vid_list = sorted(os.listdir(args.workdir))
-# vid_list=[""]
+    # try to find the real mask path if it is hidden behind pan_pred
+    # if path.exists(path.join(args.mask_path, 'pan_pred')):
+    #     args.mask_path = path.join(args.mask_path, 'pan_pred')
+    vid_list = sorted(os.listdir(args.workdir))
+    # vid_list=[""]
 
-if is_vipseg or is_davis or is_demo:
-    # meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
-    meta_dataset = VIPSegDetectionTestDataset(args.workdir, args.mask_dir, vid_list, args.size)
-elif is_burst:
-    meta_dataset = BURSTDetectionTestDataset(args.img_path,
-                                             args.mask_path,
-                                             args.burst_gt_json,
-                                             args.size,
-                                             start=args.start,
-                                             count=args.count)
-else:
-    raise NotImplementedError
+    if is_vipseg or is_davis or is_demo:
+        # meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
+        meta_dataset = VIPSegDetectionTestDataset(args.workdir, args.mask_dir, vid_list, args.size)
+    elif is_burst:
+        meta_dataset = BURSTDetectionTestDataset(args.img_path,
+                                                args.mask_path,
+                                                args.burst_gt_json,
+                                                args.size,
+                                                start=args.start,
+                                                count=args.count)
+    else:
+        raise NotImplementedError
 
     torch.autograd.set_grad_enabled(False)
 
@@ -137,224 +137,224 @@ else:
     total_process_time = 0
     total_frames = 0
 
-# Start eval
-pbar = tqdm(meta_loader, total=len(meta_dataset))
-curr = 0
+    # Start eval
+    pbar = tqdm(meta_loader, total=len(meta_dataset))
+    curr = 0
 
-for vid_reader in pbar:
+    for vid_reader in pbar:
 
-    if curr % args.every != args.mod:
+        if curr % args.every != args.mod:
+            curr += 1
+            continue
         curr += 1
-        continue
-    curr += 1
 
-    loader = DataLoader(vid_reader, batch_size=1, shuffle=False, num_workers=2)
-    vid_name = vid_reader.vid_name
-    pbar.set_description(vid_name)
-    vid_length = len(loader)
-    next_voting_frame = args.num_voting_frames - 1
-    # no need to count usage for LT if the video is not that long anyway
-    config['enable_long_term_count_usage'] = (
-        config['enable_long_term']
-        and (vid_length / (config['max_mid_term_frames'] - config['min_mid_term_frames']) *
-             config['num_prototypes']) >= config['max_long_term_elements'])
+        loader = DataLoader(vid_reader, batch_size=1, shuffle=False, num_workers=2)
+        vid_name = vid_reader.vid_name
+        pbar.set_description(vid_name)
+        vid_length = len(loader)
+        next_voting_frame = args.num_voting_frames - 1
+        # no need to count usage for LT if the video is not that long anyway
+        config['enable_long_term_count_usage'] = (
+            config['enable_long_term']
+            and (vid_length / (config['max_mid_term_frames'] - config['min_mid_term_frames']) *
+                config['num_prototypes']) >= config['max_long_term_elements'])
 
-    # out_path = os.path.join(args.workdir, "features", vid_name, args.output_dir)
-    out_path = os.path.join(args.workdir, vid_name, args.output_dir)
-    os.makedirs(out_path, exist_ok=True)
+        # out_path = os.path.join(args.workdir, "features", vid_name, args.output_dir)
+        out_path = os.path.join(args.workdir, vid_name, args.output_dir)
+        os.makedirs(out_path, exist_ok=True)
 
-    # if os.path.exists(os.path.join(out_path, "done.txt")):
-    #     print(f"We are done with images at {vid_name}, skip it.")
-    #     continue
-    
-    with open(os.path.join(out_path, "args.txt"), 'w') as f:
-        json.dump(args.__dict__, f, indent=2)
-    
-    try:
-        processor = DEVAInferenceCore(network, config=config)
-        result_saver = ResultSaver(out_path,
-                                   None,
-                                   dataset=dataset_name,
-                                   palette=vid_reader.palette,
-                                   object_manager=processor.object_manager)
+        # if os.path.exists(os.path.join(out_path, "done.txt")):
+        #     print(f"We are done with images at {vid_name}, skip it.")
+        #     continue
+        
+        with open(os.path.join(out_path, "args.txt"), 'w') as f:
+            json.dump(args.__dict__, f, indent=2)
+        
+        try:
+            processor = DEVAInferenceCore(network, config=config)
+            result_saver = ResultSaver(out_path,
+                                    None,
+                                    dataset=dataset_name,
+                                    palette=vid_reader.palette,
+                                    object_manager=processor.object_manager)
 
-        for ti, data in enumerate(loader):
+            for ti, data in enumerate(loader):
 
-            print(f"Working on frame {ti}/{len(loader)} for {vid_name}", end='\r', flush=True)
-            with torch.cuda.amp.autocast(enabled=args.amp):
-                image = data['rgb'].cuda()[0]
-                mask = data.get('mask')
-                if mask is not None:
-                    mask = mask.cuda()[0]
-                info = data['info']
-                frame = info['frame'][0]
-                shape = info['shape']
-                need_resize = info['need_resize'][0]
-                is_rgb = info['is_rgb'][0]
-                path_to_image = info['path_to_image'][0]
-                if args.save_all:
-                    info['save'][0] = True
-                if is_rgb:
-                    # if the mask format is RGB (instead of grayscale/palette), we need
-                    # more usable IDs (>255)
-                    processor.enabled_long_id()
-
-                    segments_info = None
-                    if not global_json_enabled:
-                        # safety check
-                        json_path = info.get('json')
-                        if per_vid_json_enabled is None:
-                            if json_path is None:
-                                print('Neither global nor per-video json exist.')
-                                per_vid_json_enabled = False
-                            else:
-                                print('Using per-video json.')
-                                per_vid_json_enabled = True
-                        elif json_path is None and per_vid_json_enabled:
-                            raise RuntimeError(
-                                f'Per-video json is enabled but not found for {vid_name}.')
-
-                        # read the per-video pred.json
-                        if per_vid_json_enabled:
-                            with open(json_path[0], 'r') as f:
-                                segments_info = json.load(f)
-                            processor.enabled_long_id()
-                    else:
-                        # read from the global json
-                        segments_info = video_id_to_annotation[vid_name][ti]['segments_info']
+                print(f"Working on frame {ti}/{len(loader)} for {vid_name}", end='\r', flush=True)
+                with torch.cuda.amp.autocast(enabled=args.amp):
+                    image = data['rgb'].cuda()[0]
+                    mask = data.get('mask')
+                    if mask is not None:
+                        mask = mask.cuda()[0]
+                    info = data['info']
+                    frame = info['frame'][0]
+                    shape = info['shape']
+                    need_resize = info['need_resize'][0]
+                    is_rgb = info['is_rgb'][0]
+                    path_to_image = info['path_to_image'][0]
+                    if args.save_all:
+                        info['save'][0] = True
+                    if is_rgb:
+                        # if the mask format is RGB (instead of grayscale/palette), we need
+                        # more usable IDs (>255)
                         processor.enabled_long_id()
 
-                    start = torch.cuda.Event(enable_timing=True)
-                    end = torch.cuda.Event(enable_timing=True)
-                    start.record()
+                        segments_info = None
+                        if not global_json_enabled:
+                            # safety check
+                            json_path = info.get('json')
+                            if per_vid_json_enabled is None:
+                                if json_path is None:
+                                    print('Neither global nor per-video json exist.')
+                                    per_vid_json_enabled = False
+                                else:
+                                    print('Using per-video json.')
+                                    per_vid_json_enabled = True
+                            elif json_path is None and per_vid_json_enabled:
+                                raise RuntimeError(
+                                    f'Per-video json is enabled but not found for {vid_name}.')
 
-                    segments_info = convert_json_dict_to_objects_info(mask,
-                                                                      segments_info,
-                                                                      dataset=dataset_name)
-                    frame_info = FrameInfo(image, mask, segments_info, ti, info)
+                            # read the per-video pred.json
+                            if per_vid_json_enabled:
+                                with open(json_path[0], 'r') as f:
+                                    segments_info = json.load(f)
+                                processor.enabled_long_id()
+                        else:
+                            # read from the global json
+                            segments_info = video_id_to_annotation[vid_name][ti]['segments_info']
+                            processor.enabled_long_id()
 
-                    if temporal_setting == 'semionline':
-                        if ti + args.num_voting_frames > next_voting_frame:
-                            # wait for more frames before proceeding
-                            processor.add_to_temporary_buffer(frame_info)
+                        start = torch.cuda.Event(enable_timing=True)
+                        end = torch.cuda.Event(enable_timing=True)
+                        start.record()
 
-                            if ti == next_voting_frame:
-                                # process this clip
-                                this_image = processor.frame_buffer[0].image
-                                this_ti = processor.frame_buffer[0].ti
-                                this_frame_name = processor.frame_buffer[0].name
-                                save_this_frame = processor.frame_buffer[0].save_needed
-                                path_to_image = processor.frame_buffer[0].path_to_image
+                        segments_info = convert_json_dict_to_objects_info(mask,
+                                                                        segments_info,
+                                                                        dataset=dataset_name)
+                        frame_info = FrameInfo(image, mask, segments_info, ti, info)
 
-                                _, mask, new_segments_info = processor.vote_in_temporary_buffer(
-                                    keyframe_selection='first')
-                                prob = processor.incorporate_detection(
-                                    this_image, mask, new_segments_info)
-                                next_voting_frame += args.detection_every
-                                if next_voting_frame >= vid_length:
-                                    next_voting_frame = vid_length + args.num_voting_frames
+                        if temporal_setting == 'semionline':
+                            if ti + args.num_voting_frames > next_voting_frame:
+                                # wait for more frames before proceeding
+                                processor.add_to_temporary_buffer(frame_info)
 
-                                end.record()
-                                torch.cuda.synchronize()
-                                total_process_time += (start.elapsed_time(end) / 1000)
-                                total_frames += 1
+                                if ti == next_voting_frame:
+                                    # process this clip
+                                    this_image = processor.frame_buffer[0].image
+                                    this_ti = processor.frame_buffer[0].ti
+                                    this_frame_name = processor.frame_buffer[0].name
+                                    save_this_frame = processor.frame_buffer[0].save_needed
+                                    path_to_image = processor.frame_buffer[0].path_to_image
 
-                                if save_this_frame:
-                                    result_saver.save_mask(
-                                        prob,
-                                        this_frame_name,
-                                        need_resize=need_resize,
-                                        shape=shape,
-                                        path_to_image=path_to_image,
-                                    )
+                                    _, mask, new_segments_info = processor.vote_in_temporary_buffer(
+                                        keyframe_selection='first')
+                                    prob = processor.incorporate_detection(
+                                        this_image, mask, new_segments_info)
+                                    next_voting_frame += args.detection_every
+                                    if next_voting_frame >= vid_length:
+                                        next_voting_frame = vid_length + args.num_voting_frames
 
-                                for frame_info in processor.frame_buffer[1:]:
-                                    this_image = frame_info.image
-                                    this_ti = frame_info.ti
-                                    this_frame_name = frame_info.name
-                                    save_this_frame = frame_info.save_needed
-                                    path_to_image = frame_info.path_to_image
-                                    start = torch.cuda.Event(enable_timing=True)
-                                    end = torch.cuda.Event(enable_timing=True)
-                                    start.record()
-                                    prob = processor.step(this_image,
-                                                          None,
-                                                          None,
-                                                          end=(this_ti == vid_length - 1))
                                     end.record()
                                     torch.cuda.synchronize()
                                     total_process_time += (start.elapsed_time(end) / 1000)
                                     total_frames += 1
 
                                     if save_this_frame:
-                                        result_saver.save_mask(prob,
-                                                               this_frame_name,
-                                                               need_resize=need_resize,
-                                                               shape=shape,
-                                                               path_to_image=path_to_image)
+                                        result_saver.save_mask(
+                                            prob,
+                                            this_frame_name,
+                                            need_resize=need_resize,
+                                            shape=shape,
+                                            path_to_image=path_to_image,
+                                        )
 
-                                processor.clear_buffer()
-                        else:
-                            # standard propagation
-                            prob = processor.step(image, None, None, end=(ti == vid_length - 1))
+                                    for frame_info in processor.frame_buffer[1:]:
+                                        this_image = frame_info.image
+                                        this_ti = frame_info.ti
+                                        this_frame_name = frame_info.name
+                                        save_this_frame = frame_info.save_needed
+                                        path_to_image = frame_info.path_to_image
+                                        start = torch.cuda.Event(enable_timing=True)
+                                        end = torch.cuda.Event(enable_timing=True)
+                                        start.record()
+                                        prob = processor.step(this_image,
+                                                            None,
+                                                            None,
+                                                            end=(this_ti == vid_length - 1))
+                                        end.record()
+                                        torch.cuda.synchronize()
+                                        total_process_time += (start.elapsed_time(end) / 1000)
+                                        total_frames += 1
+
+                                        if save_this_frame:
+                                            result_saver.save_mask(prob,
+                                                                this_frame_name,
+                                                                need_resize=need_resize,
+                                                                shape=shape,
+                                                                path_to_image=path_to_image)
+
+                                    processor.clear_buffer()
+                            else:
+                                # standard propagation
+                                prob = processor.step(image, None, None, end=(ti == vid_length - 1))
+                                end.record()
+                                torch.cuda.synchronize()
+                                total_process_time += (start.elapsed_time(end) / 1000)
+                                total_frames += 1
+                                if info['save'][0]:
+                                    result_saver.save_mask(prob,
+                                                        frame,
+                                                        need_resize=need_resize,
+                                                        shape=shape,
+                                                        path_to_image=path_to_image)
+
+                        elif temporal_setting == 'online':
+                            if ti % args.detection_every == 0:
+                                # incorporate new detections
+                                assert mask is not None
+                                prob = processor.incorporate_detection(image, mask, segments_info)
+                            else:
+                                # Run the model on this frame
+                                prob = processor.step(image, None, None, end=(ti == vid_length - 1))
                             end.record()
                             torch.cuda.synchronize()
                             total_process_time += (start.elapsed_time(end) / 1000)
                             total_frames += 1
                             if info['save'][0]:
                                 result_saver.save_mask(prob,
-                                                       frame,
-                                                       need_resize=need_resize,
-                                                       shape=shape,
-                                                       path_to_image=path_to_image)
+                                                    frame,
+                                                    need_resize=need_resize,
+                                                    shape=shape,
+                                                    path_to_image=path_to_image)
 
-                    elif temporal_setting == 'online':
-                        if ti % args.detection_every == 0:
-                            # incorporate new detections
-                            assert mask is not None
-                            prob = processor.incorporate_detection(image, mask, segments_info)
                         else:
-                            # Run the model on this frame
-                            prob = processor.step(image, None, None, end=(ti == vid_length - 1))
-                        end.record()
-                        torch.cuda.synchronize()
-                        total_process_time += (start.elapsed_time(end) / 1000)
-                        total_frames += 1
-                        if info['save'][0]:
-                            result_saver.save_mask(prob,
-                                                   frame,
-                                                   need_resize=need_resize,
-                                                   shape=shape,
-                                                   path_to_image=path_to_image)
+                            raise NotImplementedError
 
-                    else:
-                        raise NotImplementedError
+            result_saver.end()
+            if is_vipseg:
+                # save this for a dataset-level json
+                output_json_annotations.append(result_saver.video_json)
+            elif is_burst:
+                # save this as a video-level json, which we merge later
+                with open(path.join(out_path, vid_name, 'pred.json'), 'w') as f:
+                    json.dump(result_saver.video_json, f)
+            elif is_demo:
+                # save this as a video-level json in a separate folder
+                # os.makedirs(path.join(out_path, 'JSONFiles'), exist_ok=True)
+                # with open(path.join(out_path, 'JSONFiles', f'{vid_name}.json'), 'w') as f:
+                #     json.dump(result_saver.video_json, f, indent=4)
 
-        result_saver.end()
-        if is_vipseg:
-            # save this for a dataset-level json
-            output_json_annotations.append(result_saver.video_json)
-        elif is_burst:
-            # save this as a video-level json, which we merge later
-            with open(path.join(out_path, vid_name, 'pred.json'), 'w') as f:
-                json.dump(result_saver.video_json, f)
-        elif is_demo:
-            # save this as a video-level json in a separate folder
-            # os.makedirs(path.join(out_path, 'JSONFiles'), exist_ok=True)
-            # with open(path.join(out_path, 'JSONFiles', f'{vid_name}.json'), 'w') as f:
-            #     json.dump(result_saver.video_json, f, indent=4)
+                # save this as a video-level json in the same folder
+                with open(path.join(out_path, 'pred.json'), 'w') as f:
+                    json.dump(result_saver.video_json, f, indent=2)  # prettier json
 
-            # save this as a video-level json in the same folder
-            with open(path.join(out_path, 'pred.json'), 'w') as f:
-                json.dump(result_saver.video_json, f, indent=2)  # prettier json
+                obj_summary = result_saver.get_all_obj_summary()
 
-            obj_summary = result_saver.get_all_obj_summary()
+                with open(path.join(out_path, 'tracklets.json'), 'w') as f:
+                    json.dump(obj_summary, f, indent=2)  # prettier json
 
-            with open(path.join(out_path, 'tracklets.json'), 'w') as f:
-                json.dump(obj_summary, f, indent=2)  # prettier json
-
-        # with open(os.path.join(out_path, "done.txt"), 'w') as f:
-        #     pass
+            # with open(os.path.join(out_path, "done.txt"), 'w') as f:
+            #     pass
 
         except Exception as e:
             print(f'Runtime error at {vid_name}')

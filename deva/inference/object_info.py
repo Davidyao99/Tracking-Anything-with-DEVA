@@ -10,6 +10,7 @@ class ObjectInfo:
     """
     def __init__(self,
                  id: int,
+                 label: str = None,
                  category_id: Optional[int] = None,
                  isthing: Optional[bool] = None,
                  score: Optional[float] = None):
@@ -18,6 +19,10 @@ class ObjectInfo:
         self.scores = [score]
         self.isthing = isthing
         self.poke_count = 0  # number of detections since last this object was last seen
+        if label is not None:
+            self.labels = [label]
+        else:
+            self.labels = []
 
     def poke(self) -> None:
         self.poke_count += 1
@@ -27,6 +32,7 @@ class ObjectInfo:
 
     def merge(self, other) -> None:
         self.category_ids.extend(other.category_ids)
+        self.labels.extend(other.labels)
         self.scores.extend(other.scores)
 
     def vote_category_id(self) -> Optional[int]:
@@ -35,19 +41,23 @@ class ObjectInfo:
             return None
         else:
             return int(stats.mode(category_ids, keepdims=False)[0])
+        
+    def vote_labels(self) -> Optional[str]:
+        return self.labels
 
     def vote_score(self) -> Optional[float]:
-        scores = [c for c in self.scores if c is not None]
+        scores = [float(c) for c in self.scores if c is not None]
         if len(scores) == 0:
             return None
         else:
-            return float(np.mean(scores))
+            return scores
 
     def get_rgb(self) -> np.ndarray:
         # this is valid for panoptic segmentation-style id only (0~255**3)
         return id_to_rgb(self.id)
 
     def copy_meta_info(self, other) -> None:
+        self.labels = other.labels
         self.category_ids = other.category_ids
         self.scores = other.scores
         self.isthing = other.isthing
@@ -59,4 +69,4 @@ class ObjectInfo:
         return self.id == other.id
 
     def __repr__(self):
-        return f'(ID: {self.id}, cat: {self.category_ids}, isthing: {self.isthing}, score: {self.scores})'
+        return f'(ID: {self.id}, labels: {self.labels}, cat: {self.category_ids}, isthing: {self.isthing}, score: {self.scores})'
