@@ -2,3 +2,4 @@
 *.txt
 saves/*
 slurm_output/*
+results/*

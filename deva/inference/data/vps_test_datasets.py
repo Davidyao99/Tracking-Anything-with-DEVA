@@ -17,8 +17,8 @@ class VIPSegDetectionTestDataset:
 
     def get_datasets(self):
         for video in self.vid_list:
-            rgb_path = path.join(self.work_dir, video, 'rgb_aligned')
-            mask_path = path.join(self.work_dir, video, 'ram_gsam_window', 'mask')
+            rgb_path = path.join(self.work_dir, video, 'color')
+            mask_path = path.join(self.work_dir, video, 'ram_gsam_window/mask')
             # mask_path = path.join(self.work_dir, video, 'detic_output/imagenet21k-0.3/detic_mask')
             yield DetectionVideoReader(
                 video,

@@ -35,5 +35,7 @@ module load cuda/.11.6
 
 # python3 projects/EntitySegRLE/demo_result_and_vis.py --config-file projects/EntitySeg/configs/entity_swin_tiny_3x.yaml --input projects/EntitySeg/images/0000-color.jpg --output projects/EntitySeg/output MODEL.WEIGHTS projects/EntitySeg/checkpoints/swin_t_1x.pth MODEL.CONDINST.MASK_BRANCH.USE_MASK_RESCORE "True"
 
+# python demo/demo_with_text.py --chunk_size 4 --img_path /projects/perception/datasets/4dunderstanding/data/TUM_va/rgbd_dataset_freiburg3_walking_halfsphere_0720_0960/rgb_aligned --amp --temporal_setting semionline --size  --output ./example/output --prompt person.man.boy.couple.skateboarder
 
-python evaluation/eval_with_detections.py --every 1 --mod 0 --mask_dir ram_gsam_window  --output_dir deva_ram_gsam_window --workdir /projects/perception/datasets/4dunderstanding/data/TUM_test2 --max_missed_detection_count 5  --dataset demo --temporal_setting semionline --chunk_size 4
+# python demo/demo_with_text.py --chunk_size 4 --img_path /projects/perception/datasets/4dunderstanding/data/TUM_val/rgbd_dataset_freiburg3_walking_halfsphere_0720_0960/rgb_aligned --amp --temporal_setting semionline --size -1 --output ./example/output --prompt person.man.boy.couple.skateboarder
+# python evaluation/eval_with_detections.py --every 1 --mod 0 --mask_dir ram_gsam_window  --output_dir deva_ram_gsam_window --workdir /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scans --max_missed_detection_count 5  --dataset demo --temporal_setting semionline --chunk_size 4
