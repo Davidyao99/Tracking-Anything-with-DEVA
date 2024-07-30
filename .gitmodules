@@ -1,3 +1,6 @@
 [submodule "recognize-anything"]
 	path = recognize-anything
 	url = https://github.com/xinyu1205/recognize-anything.git
+[submodule "Grounded-Segment-Anything"]
+	path = Grounded-Segment-Anything
+	url = https://github.com/IDEA-Research/Grounded-Segment-Anything.git
