@@ -5,3 +5,4 @@ wget -O ./saves/sam_hq_vit_h.pth https://huggingface.co/lkeab/hq-sam/resolve/mai
 wget -O ./saves/sam_hq_vit_tiny.pth https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_tiny.pth?download=true
 wget -P ./saves/ https://github.com/hkchengrex/Tracking-Anything-with-DEVA/releases/download/v1.0/mobile_sam.pt
 wget -P ./saves/ https://github.com/hkchengrex/Tracking-Anything-with-DEVA/releases/download/v1.0/GroundingDINO_SwinT_OGC.py
+wget https://huggingface.co/spaces/xinyu1205/recognize-anything/resolve/main/ram_swin_large_14m.pth -O ./saves/ram_swin_large_14m.pth

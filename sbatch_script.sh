@@ -38,7 +38,7 @@ module load cuda/.11.6
 # python demo/demo_with_text.py --chunk_size 4 --img_path /projects/perception/datasets/4dunderstanding/data/TUM_va/rgbd_dataset_freiburg3_walking_halfsphere_0720_0960/rgb_aligned --amp --temporal_setting semionline --size  --output ./example/output --prompt person.man.boy.couple.skateboarder
 
 # python demo/demo_with_text.py --chunk_size 4 --img_path /projects/perception/datasets/4dunderstanding/data/TUM_val/rgbd_dataset_freiburg3_walking_halfsphere_0720_0960/rgb_aligned --amp --temporal_setting semionline --size -1 --output ./example/output --prompt person.man.boy.couple.skateboarder
-# python evaluation/eval_with_detections.py --every 1 --mod 0 --mask_dir ram_gsam_window  --output_dir deva_ram_gsam_window --workdir /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scans --max_missed_detection_count 5  --dataset demo --temporal_setting semionline --chunk_size 4
+# python evaluation/eval_with_detections.py --every 1 --mod 0 --mask_dir ram_gsam_window  --output_dir deva_ram_gsam_window --workdir ./data/data_val_preprocessed/scans --max_missed_detection_count 5  --dataset demo --temporal_setting semionline --chunk_size 4
 
 # python ram_gsam.py --config Grounded-Segment-Anything/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py --work_dir /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scans --out_dir /projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scans --ram_checkpoint ram_swin_large_14m.pth   --grounded_checkpoint groundingdino_swint_ogc.pth   --sam_checkpoint sam_vit_h_4b8939.pth   --input_image assets/demo9.jpg   --box_threshold 0.4   --text_threshold 0.4   --iou_threshold 0.5   --device "cuda"
 

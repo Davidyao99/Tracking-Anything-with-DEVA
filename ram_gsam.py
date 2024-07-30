@@ -75,7 +75,7 @@ def get_grounding_output(model, image, caption, box_threshold, text_threshold,de
                 text_threshold=text_threshold,
             )
 
-    return detections[0], classes
+    return detections, classes
 
 def show_mask(mask, ax, random_color=False):
     if random_color:
@@ -157,7 +157,7 @@ def id_to_colors(id): # id to color
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser("Grounded-Segment-Anything Demo", add_help=True)
-    parser.add_argument("--config", type=str, required=True, help="path to config file")
+    parser.add_argument("--config", type=str, default="Grounded-Segment-Anything/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py", required=True, help="path to config file")
     parser.add_argument(
         "--ram_checkpoint", type=str, required=True, help="path to checkpoint file"
     )

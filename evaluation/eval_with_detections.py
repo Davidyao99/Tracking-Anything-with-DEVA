@@ -33,19 +33,19 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('--img_path', default='./example/vipseg')
     parser.add_argument('--mask_path')
-    parser.add_argument('--mask_dir')
-    parser.add_argument('--workdir')
-    parser.add_argument('--output_dir', type=str)
-    parser.add_argument('--every', type=int)
-    parser.add_argument('--mod', type=int)
+    parser.add_argument('--mask_dir', default="ram_gsam_window")
+    parser.add_argument('--workdir', default="../data/data_val_preprocessed/scans")
+    parser.add_argument('--output_dir', type=str, default="deva_ram_gsam_window")
+    parser.add_argument('--every', type=int, default=1)
+    parser.add_argument('--mod', type=int, default=0)
     parser.add_argument('--json_path', default=None)
     parser.add_argument('--detection_every', type=int, default=5)
     parser.add_argument('--num_voting_frames',
                         default=3,
                         type=int,
                         help='Number of frames selected for voting. only valid in semionline')
-    parser.add_argument('--dataset', default='vipseg', help='vipseg/burst/unsup_davis17/demo')
-    parser.add_argument('--max_missed_detection_count', type=int, default=2)
+    parser.add_argument('--dataset', default='demo', help='vipseg/burst/unsup_davis17/demo')
+    parser.add_argument('--max_missed_detection_count', type=int, default=5)
     # skip VPQ/STQ computation
     parser.add_argument('--no_metrics', action='store_true')
 
