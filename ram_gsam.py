@@ -170,14 +170,14 @@ if __name__ == "__main__":
     parser.add_argument("--input_image", type=str, required=True, help="path to image file")
     parser.add_argument("--split", default=",", type=str, help="split for text prompt")
 
-    parser.add_argument("--box_threshold", type=float, default=0.25, help="box threshold")
-    parser.add_argument("--text_threshold", type=float, default=0.25, help="text threshold")
+    parser.add_argument("--box_threshold", type=float, default=0.4, help="box threshold")
+    parser.add_argument("--text_threshold", type=float, default=0.4, help="text threshold")
     parser.add_argument("--iou_threshold", type=float, default=0.5, help="iou threshold")
 
-    parser.add_argument("--work_dir", type=str, default="/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scans")
-    parser.add_argument("--out_dir",  type=str, default="/projects/perception/datasets/scannet200/ovir_preprocessed_data_val/scans")
+    parser.add_argument("--work_dir", type=str, default="../data/data_val_preprocessed/scans")
+    parser.add_argument("--out_dir",  type=str, default="../data/data_val_preprocessed/scans")
 
-    parser.add_argument("--device", type=str, default="cpu", help="running on cpu only!, default=False")
+    parser.add_argument("--device", type=str, default="cuda", help="running on cpu only!, default=False")
     args = parser.parse_args()
 
     # cfg
