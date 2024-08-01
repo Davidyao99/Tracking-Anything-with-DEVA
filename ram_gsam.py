@@ -157,7 +157,7 @@ def id_to_colors(id): # id to color
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser("Grounded-Segment-Anything Demo", add_help=True)
-    parser.add_argument("--config", type=str, default="Grounded-Segment-Anything/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py", required=True, help="path to config file")
+    parser.add_argument("--config", type=str, default="Grounded-Segment-Anything/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py", help="path to config file")
     parser.add_argument(
         "--ram_checkpoint", type=str, required=True, help="path to checkpoint file"
     )
@@ -167,7 +167,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--sam_checkpoint", type=str, required=True, help="path to checkpoint file"
     )
-    parser.add_argument("--input_image", type=str, required=True, help="path to image file")
+    parser.add_argument("--input_image", type=str, default="assets/demo9.jpg", help="path to image file")
     parser.add_argument("--split", default=",", type=str, help="split for text prompt")
 
     parser.add_argument("--box_threshold", type=float, default=0.4, help="box threshold")
