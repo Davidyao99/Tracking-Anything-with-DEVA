@@ -1,5 +1,6 @@
 from os import path
 from typing import Dict, List
+import json
 
 import cv2
 import torch
@@ -39,9 +40,8 @@ def process_frame_with_text(deva: DEVAInferenceCore,
         image_np = cv2.imread(frame_path)
         image_np = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
     cfg = deva.config
-    raw_prompt = cfg['prompt']
-    prompts = raw_prompt.split('.')
-
+    with open(cfg['prompt'], 'r') as f:
+        prompts = json.load(f)['dynamic']
     h, w = image_np.shape[:2]
     new_min_side = cfg['size']
     need_resize = new_min_side > 0

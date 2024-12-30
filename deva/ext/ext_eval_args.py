@@ -60,7 +60,7 @@ def add_text_default_args(parser):
                         default=-1,
                         type=int,
                         help='Max. num of objects to keep in memory. -1 for no limit')
-    parser.add_argument('--prompt', type=str, help='Separate classes with a single fullstop')
+    parser.add_argument('--prompt', type=str, help='Path to prompt file')
     parser.add_argument('--sam_variant', default='original', help='mobile/original')
     return parser
 
