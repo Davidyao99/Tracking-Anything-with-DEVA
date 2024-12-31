@@ -21,7 +21,7 @@ class SimpleVideoReader(Dataset):
         image_dir - points to a directory of jpg images
         """
         self.image_dir = image_dir
-        self.frames = sorted(os.listdir(self.image_dir))
+        self.frames = sorted([x for x in os.listdir(self.image_dir) if x.endswith('.jpg') or x.endswith('.png')])
 
     def __getitem__(self, idx):
         frame = self.frames[idx]
