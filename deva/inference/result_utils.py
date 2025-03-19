@@ -249,7 +249,7 @@ def save_result(queue: Queue):
                     all_scores = []
                     for seg in segments_info:
                         all_masks.append(mask == seg['id'])
-                        labels.append(f'{prompts[seg["category_id"]]} {seg["score"]:.2f}')
+                        labels.append(f'{seg["score"]:.2f}')
                         all_cat_ids.append(seg['category_id'])
                         all_scores.append(seg['score'])
                     if len(all_masks) > 0:

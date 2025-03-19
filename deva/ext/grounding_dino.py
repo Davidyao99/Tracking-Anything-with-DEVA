@@ -14,6 +14,8 @@ except ImportError:
     # not sure why this happens sometimes
     from GroundingDINO.groundingdino.util.inference import Model as GroundingDINOModel
 from segment_anything import sam_model_registry, SamPredictor, sam_hq_model_registry
+from sam2.build_sam import build_sam2
+from sam2.sam2_image_predictor import SAM2ImagePredictor
 from deva.ext.MobileSAM.setup_mobile_sam import setup_model as setup_mobile_sam
 from deva.ext.LightHQSAM.setup_light_hqsam import setup_model as setup_light_hqsam
 import numpy as np
@@ -32,6 +34,7 @@ def get_grounding_dino_model(config: Dict, device: str) -> (GroundingDINOModel, 
 
     # Building SAM Model and SAM Predictor
     variant = config['sam_variant'].lower()
+
     if variant == 'mobile':
         MOBILE_SAM_CHECKPOINT_PATH = config['MOBILE_SAM_CHECKPOINT_PATH']
 
@@ -64,6 +67,11 @@ def get_grounding_dino_model(config: Dict, device: str) -> (GroundingDINOModel, 
         light_hq_sam.load_state_dict(checkpoint, strict=True)
         light_hq_sam.to(device=device)
         sam = SamPredictor(light_hq_sam)
+    elif variant == 'sam2':
+
+        checkpoint = config['SAM2_CHECKPOINT_PATH']
+        model_cfg = "configs/sam2.1/sam2.1_hiera_l.yaml"
+        sam = SAM2ImagePredictor(build_sam2(model_cfg, checkpoint))
 
     return gd_model, sam
 
@@ -83,7 +91,7 @@ def segment_with_text(config: Dict, gd_model: GroundingDINOModel, sam: SamPredic
     BOX_THRESHOLD = TEXT_THRESHOLD = config['DINO_THRESHOLD']
     NMS_THRESHOLD = config['DINO_NMS_THRESHOLD']
 
-    sam.set_image(image, image_format='RGB')
+    sam.set_image(image)
 
     # detect objects
     # GroundingDINO uses BGR

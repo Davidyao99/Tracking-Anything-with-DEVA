@@ -6,20 +6,25 @@ from deva.inference.data.detection_video_reader import DetectionVideoReader
 
 
 class VIPSegDetectionTestDataset:
-    def __init__(self, image_dir, mask_dir, size=-1):
-        self.image_dir = image_dir
+    def __init__(self, work_dir, mask_dir, vid_list, size=-1):
+        self.work_dir = work_dir
         self.mask_dir = mask_dir
         self.size = size
-        self.vid_list = sorted(os.listdir(self.mask_dir))
-        self.vid_list = [v for v in self.vid_list if not v.endswith('.json')]
+        # self.vid_list = sorted(os.listdir(self.work_dir))
+        # self.vid_list = [v for v in self.vid_list if not v.endswith('.pkl')]
+        # self.vid_list = ['camel']
+        self.vid_list = vid_list
 
     def get_datasets(self):
         for video in self.vid_list:
+            rgb_path = path.join(self.work_dir, video, 'rgb')
+            mask_path = path.join(self.work_dir, video, f'{self.mask_dir}/mask')
+            # mask_path = path.join(self.work_dir, video, 'detic_output/imagenet21k-0.3/detic_mask')
             yield DetectionVideoReader(
                 video,
-                path.join(self.image_dir, video),
-                path.join(self.mask_dir, video),
-                to_save=[name[:-4] for name in os.listdir(path.join(self.mask_dir, video))],
+                rgb_path,
+                mask_path,
+                to_save=[name[:-4] for name in os.listdir(rgb_path)],
                 size=self.size,
             )
 
