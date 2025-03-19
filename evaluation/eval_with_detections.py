@@ -98,7 +98,7 @@ def main():
     # try to find the real mask path if it is hidden behind pan_pred
     # if path.exists(path.join(args.mask_path, 'pan_pred')):
     #     args.mask_path = path.join(args.mask_path, 'pan_pred')
-    vid_list = sorted(os.listdir(args.img_path))
+    vid_list = sorted(os.listdir(args.workdir))
     # vid_list=[""]
 
     if is_vipseg or is_davis or is_demo:
