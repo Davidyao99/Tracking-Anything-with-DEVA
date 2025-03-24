@@ -36,19 +36,17 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('--img_path', default='./example/vipseg')
     parser.add_argument('--mask_path')
-    parser.add_argument('--mask_dir')
+    parser.add_argument('--input-dir', default="gsam")
     parser.add_argument('--workdir')
-    parser.add_argument('--output_dir', type=str)
-    parser.add_argument('--every', type=int)
-    parser.add_argument('--mod', type=int)
+    parser.add_argument('--output-dir', default="deva_gsam",type=str)
     parser.add_argument('--json_path', default=None)
-    parser.add_argument('--detection_every', type=int, default=5)
+    parser.add_argument('--detection_every', type=int, default=2)
     parser.add_argument('--num_voting_frames',
-                        default=3,
+                        default=5,
                         type=int,
                         help='Number of frames selected for voting. only valid in semionline')
-    parser.add_argument('--dataset', default='vipseg', help='vipseg/burst/unsup_davis17/demo')
-    parser.add_argument('--max_missed_detection_count', type=int, default=2)
+    parser.add_argument('--dataset', default='demo', help='vipseg/burst/unsup_davis17/demo')
+    parser.add_argument('--max_missed_detection_count', type=int, default=300)
     # skip VPQ/STQ computation
     parser.add_argument('--no_metrics', action='store_true')
 
@@ -93,17 +91,11 @@ def main():
         if path.exists(path.join(args.mask_path, 'pred.json')):
             args.json_path = path.join(args.mask_path, 'pred.json')
 
-    #     out_path = args.output
-
-    # try to find the real mask path if it is hidden behind pan_pred
-    # if path.exists(path.join(args.mask_path, 'pan_pred')):
-    #     args.mask_path = path.join(args.mask_path, 'pan_pred')
     vid_list = sorted(os.listdir(args.workdir))
-    # vid_list=[""]
 
     if is_vipseg or is_davis or is_demo:
         # meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
-        meta_dataset = VIPSegDetectionTestDataset(args.workdir, args.mask_dir, vid_list, args.size)
+        meta_dataset = VIPSegDetectionTestDataset(args.workdir, args.input_dir, vid_list, args.size)
     elif is_burst:
         meta_dataset = BURSTDetectionTestDataset(args.img_path,
                                                 args.mask_path,
@@ -142,14 +134,8 @@ def main():
 
     # Start eval
     pbar = tqdm(meta_loader, total=len(meta_dataset))
-    curr = 0
 
     for vid_reader in pbar:
-
-        if curr % args.every != args.mod:
-            curr += 1
-            continue
-        curr += 1
 
         loader = DataLoader(vid_reader, batch_size=1, shuffle=False, num_workers=2)
         vid_name = vid_reader.vid_name
@@ -166,9 +152,6 @@ def main():
         out_path = os.path.join(args.workdir, vid_name, args.output_dir)
         os.makedirs(out_path, exist_ok=True)
 
-        # if os.path.exists(os.path.join(out_path, "done.txt")):
-        #     print(f"We are done with images at {vid_name}, skip it.")
-        #     continue
         
         with open(os.path.join(out_path, "args.txt"), 'w') as f:
             json.dump(args.__dict__, f, indent=2)
@@ -263,7 +246,7 @@ def main():
                                     total_frames += 1
 
                                     if save_this_frame:
-                                        res_save = result_saver.save_mask(
+                                        result_saver.save_mask(
                                             prob,
                                             this_frame_name,
                                             need_resize=need_resize,
@@ -290,7 +273,7 @@ def main():
                                         total_frames += 1
 
                                         if save_this_frame:
-                                            res_save = result_saver.save_mask(prob,
+                                            result_saver.save_mask(prob,
                                                                 this_frame_name,
                                                                 need_resize=need_resize,
                                                                 shape=shape,
@@ -305,7 +288,7 @@ def main():
                                 total_process_time += (start.elapsed_time(end) / 1000)
                                 total_frames += 1
                                 if info['save'][0]:
-                                    res_save = result_saver.save_mask(prob,
+                                    result_saver.save_mask(prob,
                                                         frame,
                                                         need_resize=need_resize,
                                                         shape=shape,
@@ -325,7 +308,7 @@ def main():
                             total_process_time += (start.elapsed_time(end) / 1000)
                             total_frames += 1
                             if info['save'][0]:
-                                res_save = result_saver.save_mask(prob,
+                                result_saver.save_mask(prob,
                                                     frame,
                                                     need_resize=need_resize,
                                                     shape=shape,
@@ -343,10 +326,6 @@ def main():
                 with open(path.join(out_path, vid_name, 'pred.json'), 'w') as f:
                     json.dump(result_saver.video_json, f)
             elif is_demo:
-                # save this as a video-level json in a separate folder
-                # os.makedirs(path.join(out_path, 'JSONFiles'), exist_ok=True)
-                # with open(path.join(out_path, 'JSONFiles', f'{vid_name}.json'), 'w') as f:
-                #     json.dump(result_saver.video_json, f, indent=4)
 
                 # save this as a video-level json in the same folder
                 with open(path.join(out_path, 'pred.json'), 'w') as f:
@@ -361,10 +340,6 @@ def main():
             print(e)
             raise e  # comment this out if you want
     
-
-
-        
-
 
     if is_vipseg:
         output_json = {'annotations': output_json_annotations}

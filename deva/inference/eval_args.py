@@ -44,7 +44,7 @@ def add_common_eval_args(parser: ArgumentParser):
                         default=5)
     parser.add_argument(
         '--chunk_size',
-        default=-1,
+        default=4,
         type=int,
         help='''Number of objects to process in parallel as a batch; -1 for unlimited. 
         Set to a small number to save memory.''')
