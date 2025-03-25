@@ -91,7 +91,8 @@ def main():
         if path.exists(path.join(args.mask_path, 'pred.json')):
             args.json_path = path.join(args.mask_path, 'pred.json')
 
-    vid_list = sorted(os.listdir(args.workdir))
+    # vid_list = sorted(os.listdir(args.workdir))
+    vid_list = ["alley_2", "ambush_4", "ambush_5", "ambush_6", "cave_2", "cave_4", "market_2", "market_5", "market_6", "shaman_3", "sleeping_1", "sleeping_2", "temple_2", "temple_3"]
 
     if is_vipseg or is_davis or is_demo:
         # meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
@@ -345,12 +346,6 @@ def main():
         output_json = {'annotations': output_json_annotations}
         with open(path.join(out_path, 'pred.json'), 'w') as f:
             json.dump(output_json, f)
-
-    with open("timing.txt", "a+") as f:
-        f.write(f"Ran on {args.workdir}")
-        f.write(f"{vid_list}")
-        f.write(f"Total time taken: {total_process_time} seconds, Time per video: {total_process_time/len(vid_list)}")
-        f.write("--------------------")
 
     print(f'Total processing time: {total_process_time}')
     print(f'Total processed videos: {len(meta_dataset)}')
