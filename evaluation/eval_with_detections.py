@@ -36,9 +36,9 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('--img_path', default='./example/vipseg')
     parser.add_argument('--mask_path')
-    parser.add_argument('--input-dir', default="gsam")
+    parser.add_argument('--input-dir', default="gsam2")
     parser.add_argument('--workdir')
-    parser.add_argument('--output-dir', default="deva_gsam",type=str)
+    parser.add_argument('--output-dir', default="deva",type=str)
     parser.add_argument('--json_path', default=None)
     parser.add_argument('--detection_every', type=int, default=2)
     parser.add_argument('--num_voting_frames',
