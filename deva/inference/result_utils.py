@@ -235,10 +235,13 @@ def save_result(queue: Queue):
                 if image_np is None:
                     if path_to_image is not None:
                         image_np = np.array(Image.open(path_to_image))
+                        if image_np.shape[2] == 4:
+                            image_np = image_np[:, :, :3]
                     else:
                         raise ValueError('Cannot visualize without image_np or path_to_image')
                 alpha = (out_mask == 0).astype(np.float32) * 0.5 + 0.5
                 alpha = alpha[:, :, None]
+                
                 blend = (image_np * alpha + rgb_mask * (1 - alpha)).astype(np.uint8)
 
                 if prompts is not None:

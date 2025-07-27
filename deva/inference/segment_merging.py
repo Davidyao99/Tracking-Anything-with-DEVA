@@ -41,7 +41,7 @@ def merge_by_iou(our_masks: Dict[ObjectInfo, torch.Tensor], new_masks: Dict[Obje
                 continue
             iou, _, union = _get_iou(new_masks[new_obj], our_masks[our_obj], new_sums[new_obj],
                                      our_sums[our_obj])
-            matched = (iou > 0.5)
+            matched = (iou > 0.4)
             if matched:
                 our_to_new_matching[our_obj] = new_obj
                 matched_area[(our_obj, False)] = union

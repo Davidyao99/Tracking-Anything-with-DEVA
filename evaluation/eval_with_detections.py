@@ -36,9 +36,9 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('--img_path', default='./example/vipseg')
     parser.add_argument('--mask_path')
-    parser.add_argument('--input-dir', default="gsam2")
-    parser.add_argument('--workdir')
-    parser.add_argument('--output-dir', default="deva",type=str)
+    parser.add_argument('--input-dir', default="gsam2_improved")
+    parser.add_argument('--workdir', default="/projects/illinois/eng/cs/shenlong/datasets/egohumans/data2_preprocessed/")
+    parser.add_argument('--output-dir', default="deva_test",type=str)
     parser.add_argument('--json_path', default=None)
     parser.add_argument('--detection_every', type=int, default=2)
     parser.add_argument('--num_voting_frames',
@@ -46,7 +46,7 @@ def main():
                         type=int,
                         help='Number of frames selected for voting. only valid in semionline')
     parser.add_argument('--dataset', default='demo', help='vipseg/burst/unsup_davis17/demo')
-    parser.add_argument('--max_missed_detection_count', type=int, default=300)
+    parser.add_argument('--max_missed_detection_count', type=int, default=20)
     # skip VPQ/STQ computation
     parser.add_argument('--no_metrics', action='store_true')
 
@@ -92,7 +92,9 @@ def main():
             args.json_path = path.join(args.mask_path, 'pred.json')
 
     # vid_list = sorted(os.listdir(args.workdir))
-    vid_list = ["alley_2", "ambush_4", "ambush_5", "ambush_6", "cave_2", "cave_4", "market_2", "market_5", "market_6", "shaman_3", "sleeping_1", "sleeping_2", "temple_2", "temple_3"]
+    # vid_list = ["alley_2", "ambush_4", "ambush_5", "ambush_6", "cave_2", "cave_4", "market_2", "market_5", "market_6", "shaman_3", "sleeping_1", "sleeping_2", "temple_2", "temple_3"]
+    # vid_list = ["volleyball_aria02_16_141"]
+    vid_list = [x for x in sorted(os.listdir(args.workdir))]
 
     if is_vipseg or is_davis or is_demo:
         # meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
