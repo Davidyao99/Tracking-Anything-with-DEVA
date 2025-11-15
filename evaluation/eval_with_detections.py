@@ -91,7 +91,7 @@ def main():
         if path.exists(path.join(args.mask_path, 'pred.json')):
             args.json_path = path.join(args.mask_path, 'pred.json')
 
-    vid_list = [x for x in sorted(os.listdir(args.workdir))]
+    vid_list = sorted(os.listdir(args.workdir))
 
     if is_vipseg or is_davis or is_demo:
         # meta_dataset = VIPSegDetectionTestDataset(args.img_path, args.mask_path, args.size)
