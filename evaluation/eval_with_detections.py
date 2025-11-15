@@ -36,9 +36,9 @@ def main():
     parser = ArgumentParser()
     parser.add_argument('--img_path', default='./example/vipseg')
     parser.add_argument('--mask_path')
-    parser.add_argument('--input-dir', default="gsam2_improved")
-    parser.add_argument('--workdir', default="/projects/illinois/eng/cs/shenlong/datasets/egohumans/data2_preprocessed/")
-    parser.add_argument('--output-dir', default="deva_test",type=str)
+    parser.add_argument('--input-dir', default="gsam2")
+    parser.add_argument('--workdir', required=True, type=str)
+    parser.add_argument('--output-dir', default="deva",type=str)
     parser.add_argument('--json_path', default=None)
     parser.add_argument('--detection_every', type=int, default=2)
     parser.add_argument('--num_voting_frames',
@@ -91,9 +91,6 @@ def main():
         if path.exists(path.join(args.mask_path, 'pred.json')):
             args.json_path = path.join(args.mask_path, 'pred.json')
 
-    # vid_list = sorted(os.listdir(args.workdir))
-    # vid_list = ["alley_2", "ambush_4", "ambush_5", "ambush_6", "cave_2", "cave_4", "market_2", "market_5", "market_6", "shaman_3", "sleeping_1", "sleeping_2", "temple_2", "temple_3"]
-    # vid_list = ["volleyball_aria02_16_141"]
     vid_list = [x for x in sorted(os.listdir(args.workdir))]
 
     if is_vipseg or is_davis or is_demo:
